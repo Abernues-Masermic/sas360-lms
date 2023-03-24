@@ -1,0 +1,16 @@
+Position;Name;TypeName;Unit
+400;u16numero_serie1;UInt16;
+401;u16numero_serie2;UInt16;
+402;u16numero_serie3;UInt16;
+403;u16tag_ID_2LSB_unico;UInt16;
+404;u64CONTAG_ID;UInt64;
+408;u16version_hardware;UInt16;
+409;u16version_firmware;UInt16;
+410;u16version_bootloader;UInt16;
+411;u16reserved_11;UInt16;
+412;u16reserved_12;UInt16;
+413;u16reserved_13;UInt16;
+414;u32rtc_firmware_update;UInt32;
+416;u32calc_rtc_last_config_change;UInt32;
+418;u16calc_internal_config_change_counter;UInt16;
+419;u16crc_config_interna;UInt16;

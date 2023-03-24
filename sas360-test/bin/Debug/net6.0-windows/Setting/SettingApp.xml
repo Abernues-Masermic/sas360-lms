@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<body>
+  <Simulator_mode>1</Simulator_mode>
+  <Panel_area>1500</Panel_area>
+  <Grid_area>100</Grid_area>
+  <Total_closest_tags>12</Total_closest_tags>
+  <Total_closest_zone>16</Total_closest_zone>
+  <Date_format>yyyy/MM/dd HH:mm:ss</Date_format>
+  <Date_provider>en-GB</Date_provider>
+  <Enable_read_memory_bits>240</Enable_read_memory_bits>
+  <Write_code_init>170</Write_code_init>
+  <Write_code_prod>90</Write_code_prod>
+  <Write_code_depu>170</Write_code_depu>
+  <Path_internal_config>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\internal_config.csv</Path_internal_config>
+  <Path_config_sas360con>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\config_sas360con.csv</Path_config_sas360con>
+  <Path_config_iot>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\config_iot.csv</Path_config_iot>
+  <Path_image_sas360con>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\image_sas360con.csv</Path_image_sas360con>
+  <Path_image_iot>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\image_iot.csv</Path_image_iot>
+  <Path_console_closest_tags_base>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\console_closest_tags_base.csv</Path_console_closest_tags_base>
+  <Path_console_closest_tags_extended>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\console_closest_tags_extended.csv</Path_console_closest_tags_extended>
+  <Path_uwb_closest_tags_base>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\uwb_closest_tags_base.csv</Path_uwb_closest_tags_base>
+  <Path_uwb_closest_tags_extended>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\uwb_closest_tags_extended.csv</Path_uwb_closest_tags_extended>
+  <Path_console_closest_zone_base>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\console_closest_zone_base.csv</Path_console_closest_zone_base>
+  <Path_console_closest_zone_extended>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\console_closest_zone_extended.csv</Path_console_closest_zone_extended>
+  <Path_nvreg>
+  </Path_nvreg>
+  <Path_commands>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\commands.csv</Path_commands>
+</body>

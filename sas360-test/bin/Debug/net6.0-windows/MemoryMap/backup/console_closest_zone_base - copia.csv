@@ -1,0 +1,115 @@
+Addr;Name;TypeName;Unit;Format
+1400;u16zoneID_2LSB_1C;UInt16;-;1
+1401;u8zoneID_byte_3_1C;Byte;-;1
+1401,5;u8software version_1C;Byte;-;1
+1402;ub16ZONE_estado_codificado_1C;UInt16;-;1
+1403;s16Pos_X_cm_1C;Int16;-;1
+1404;s16Pos_Y_cm_1C;Int16;-;1
+1405;u16reported_register_1C;UInt16;-;1
+1406;u16zoneID_2LSB_2C;UInt16;-;1
+1407;u8zoneID_byte_3_2C;Byte;-;1
+1407,5;u8software version_2C;Byte;-;1
+1408;ub16ZONE_estado_codificado_2C;UInt16;-;1
+1409;s16Pos_X_cm_2C;Int16;-;1
+1410;s16Pos_Y_cm_2C;Int16;-;1
+1411;u16reported_register_2C;UInt16;-;1
+1412;u16zoneID_2LSB_3C;UInt16;-;1
+1413;u8zoneID_byte_3_3C;Byte;-;1
+1413,5;u8software version_3C;Byte;-;1
+1414;ub16ZONE_estado_codificado_3C;UInt16;-;1
+1415;s16Pos_X_cm_3C;Int16;-;1
+1416;s16Pos_Y_cm_3C;Int16;-;1
+1417;u16reported_register_3C;UInt16;-;1
+1418;u16zoneID_2LSB_4C;UInt16;-;1
+1419;u8zoneID_byte_3_4C;Byte;-;1
+1419,5;u8software version_4C;Byte;-;1
+1420;ub16ZONE_estado_codificado_4C;UInt16;-;1
+1421;s16Pos_X_cm_4C;Int16;-;1
+1422;s16Pos_Y_cm_4C;Int16;-;1
+1423;u16reported_register_4C;UInt16;-;1
+1424;u16zoneID_2LSB_5C;UInt16;-;1
+1425;u8zoneID_byte_3_5C;Byte;-;1
+1425,5;u8software version_5C;Byte;-;1
+1426;ub16ZONE_estado_codificado_5C;UInt16;-;1
+1427;s16Pos_X_cm_5C;Int16;-;1
+1428;s16Pos_Y_cm_5C;Int16;-;1
+1429;u16reported_register_5C;UInt16;-;1
+1430;u16zoneID_2LSB_6C;UInt16;-;1
+1431;u8zoneID_byte_3_6C;Byte;-;1
+1431,5;u8software version_6C;Byte;-;1
+1432;ub16ZONE_estado_codificado_6C;UInt16;-;1
+1433;s16Pos_X_cm_6C;Int16;-;1
+1434;s16Pos_Y_cm_6C;Int16;-;1
+1435;u16reported_register_6C;UInt16;-;1
+1436;u16zoneID_2LSB_7C;UInt16;-;1
+1437;u8zoneID_byte_3_7C;Byte;-;1
+1437,5;u8software version_7C;Byte;-;1
+1438;ub16ZONE_estado_codificado_7C;UInt16;-;1
+1439;s16Pos_X_cm_7C;Int16;-;1
+1440;s16Pos_Y_cm_7C;Int16;-;1
+1441;u16reported_register_7C;UInt16;-;1
+1442;u16zoneID_2LSB_8C;UInt16;-;1
+1443;u8zoneID_byte_3_8C;Byte;-;1
+1443,5;u8software version_8C;Byte;-;1
+1444;ub16ZONE_estado_codificado_8C;UInt16;-;1
+1445;s16Pos_X_cm_8C;Int16;-;1
+1446;s16Pos_Y_cm_8C;Int16;-;1
+1447;u16reported_register_8C;UInt16;-;1
+1448;u16zoneID_2LSB_9C;UInt16;-;1
+1449;u8zoneID_byte_3_9C;Byte;-;1
+1449,5;u8software version_9C;Byte;-;1
+1450;ub16ZONE_estado_codificado_9C;UInt16;-;1
+1451;s16Pos_X_cm_9C;Int16;-;1
+1452;s16Pos_Y_cm_9C;Int16;-;1
+1453;u16reported_register_9C;UInt16;-;1
+1454;u16zoneID_2LSB_10C;UInt16;-;1
+1455;u8zoneID_byte_3_10C;Byte;-;1
+1455,5;u8software version_10C;Byte;-;1
+1456;ub16ZONE_estado_codificado_10C;UInt16;-;1
+1457;s16Pos_X_cm_10C;Int16;-;1
+1458;s16Pos_Y_cm_10C;Int16;-;1
+1459;u16reported_register_10C;UInt16;-;1
+1460;u16zoneID_2LSB_11C;UInt16;-;1
+1461;u8zoneID_byte_3_11C;Byte;-;1
+1461,5;u8software version_11C;Byte;-;1
+1462;ub16ZONE_estado_codificado_11C;UInt16;-;1
+1463;s16Pos_X_cm_11C;Int16;-;1
+1464;s16Pos_Y_cm_11C;Int16;-;1
+1465;u16reported_register_11C;UInt16;-;1
+1466;u16zoneID_2LSB_12C;UInt16;-;1
+1467;u8zoneID_byte_3_12C;Byte;-;1
+1467,5;u8software version_12C;Byte;-;1
+1468;ub16ZONE_estado_codificado_12C;UInt16;-;1
+1469;s16Pos_X_cm_12C;Int16;-;1
+1470;s16Pos_Y_cm_12C;Int16;-;1
+1471;u16reported_register_12C;UInt16;-;1
+1472;u16zoneID_2LSB_13C;UInt16;-;1
+1473;u8zoneID_byte_3_13C;Byte;-;1
+1473,5;u8software version_13C;Byte;-;1
+1474;ub16ZONE_estado_codificado_13C;UInt16;-;1
+1475;s16Pos_X_cm_13C;Int16;-;1
+1476;s16Pos_Y_cm_13C;Int16;-;1
+1477;u16reported_register_13C;UInt16;-;1
+1478;u16zoneID_2LSB_14C;UInt16;-;1
+1479;u8zoneID_byte_3_14C;Byte;-;1
+1479,5;u8software version_14C;Byte;-;1
+1480;ub16ZONE_estado_codificado_14C;UInt16;-;1
+1481;s16Pos_X_cm_14C;Int16;-;1
+1482;s16Pos_Y_cm_14C;Int16;-;1
+1483;u16reported_register_14C;UInt16;-;1
+1484;u16zoneID_2LSB_15C;UInt16;-;1
+1485;u8zoneID_byte_3_15C;Byte;-;1
+1485,5;u8software version_15C;Byte;-;1
+1486;ub16ZONE_estado_codificado_15C;UInt16;-;1
+1487;s16Pos_X_cm_15C;Int16;-;1
+1488;s16Pos_Y_cm_15C;Int16;-;1
+1489;u16reported_register_15C;UInt16;-;1
+1490;u16zoneID_2LSB_16C;UInt16;-;1
+1491;u8zoneID_byte_3_16C;Byte;-;1
+1491,5;u8software version_16C;Byte;-;1
+1492;ub16ZONE_estado_codificado_16C;UInt16;-;1
+1493;s16Pos_X_cm_16C;Int16;-;1
+1494;s16Pos_Y_cm_16C;Int16;-;1
+1495;u16reported_register_16C;UInt16;-;1
+
+

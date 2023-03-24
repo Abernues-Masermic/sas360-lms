@@ -1,0 +1,45 @@
+﻿<Window x:Class="sas360_test.DigitalChangeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:sas360_test"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="60" Width="480"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"  
+        AllowsTransparency="True"  
+        Background="Transparent"      
+        Loaded="Window_Loaded">
+    
+    <Border  Style="{StaticResource Border_background_separator}">
+        <Border  Style="{StaticResource Border_background}">
+            <Grid>
+                <StackPanel Orientation="Vertical" Cursor="">
+                    <DockPanel >
+                        <DockPanel DockPanel.Dock="Left" Cursor="SizeAll" >
+                            <Border  x:Name="Border_digital_state"  Background="White" CornerRadius="5" BorderBrush="Black" Cursor="Hand"  BorderThickness="1,1,2,2" Margin="5" Width="370"  MouseLeftButtonDown="Digital_MouseDown">
+                                <Label x:Name="Label_digital_name" Style="{StaticResource Label_title}" Foreground="Black" Content="DIGITAL OUTPUT" />
+                            </Border>
+                        </DockPanel>
+
+                        <WrapPanel DockPanel.Dock="Right" HorizontalAlignment="Right">
+
+                            <Button x:Name="Button_save" Style="{StaticResource Button_rounded}" Height="30" Width="30" Margin="0,0,5,0" HorizontalAlignment="Right" Click="Button_save_Click">
+                                <Image Source="/Images/Save.png"  Height="22" Width="22"/>
+                            </Button>
+
+                            <Button x:Name="Button_exit" Style="{StaticResource Button_rounded}"  Height="32" Width="32" Margin="5" HorizontalAlignment="Right" Click="Button_exit_Click">
+                                <Image Height="22" Width="22" Source="/Images/exit.png"/>
+                            </Button>
+                        </WrapPanel>
+                    </DockPanel>
+
+
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

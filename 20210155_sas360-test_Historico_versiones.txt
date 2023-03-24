@@ -1,0 +1,61 @@
+//------------------------------------------------------------------------
+// sas360-test Historico de versiones sistema de test dispositivo sas360con
+//------------------------------------------------------------------------
+==========================================================================
+                   20210155: sas360 test
+==========================================================================
+                   Microelectrónica Maser
+                   Kurutz Gain, 20850 Mendaro
+                   Tel.: +34 943 742669, Fax -3770
+
+==========================================================================
+
+============================================================================================================
+IDE				FRAMEWORK 			
+Visual Studio 2022 		.NET 6.0 		
+=============================================================================================================
+
+-------------------------
+
+ver 2.0.0 - 24/03/2023
+
+Incidence: Data simulation and show received data into the window
+
+Proyects / classes: MainWindow, SettingAppWindow, SettingModbusVarWindow, Manage_comm, Manage_memory, Mem_record, Memory
+Detail: Define main window. Tag - zone detecting map / data list, configuration and image data lists, Command controls
+Status: Verified
+
+Executed: Ander Bernues 24/03/2023
+Validated: Ander Bernues 24/03/2023
+
+-------------------------
+
+-------------------------
+
+ver 1.0.0 - 23/02/2023
+
+Incidence: Desarrollo de sistema sas360 test con tecnología .NET 
+
+Proyects / classes: Classes, General, Manage, Window
+Detail: Define first sketch of the system. Main window, lists, settings 
+Status: Verified
+
+Executed: Ander Bernues 23/01/2023
+Validated: Ander Bernues 23/01/2023
+
+-------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

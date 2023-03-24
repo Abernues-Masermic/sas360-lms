@@ -1,0 +1,119 @@
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\sas360-test.exe
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\sas360-test.deps.json
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\sas360-test.runtimeconfig.json
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\sas360-test.dll
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\sas360-test.pdb
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\CsvHelper.dll
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\NumericUpDownLib.dll
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\System.IO.Ports.dll
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\System.IO.Ports.dll
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.IO.Ports.dll
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.csproj.AssemblyReference.cache
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\MainWindow.g.cs
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\SettingWindow.g.cs
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test_MarkupCompile.cache
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test_MarkupCompile.lref
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\MainWindow.baml
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\SettingWindow.baml
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.g.resources
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.AssemblyInfoInputs.cache
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.AssemblyInfo.cs
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.csproj.CoreCompileInputs.cache
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.csproj.CopyComplete
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.dll
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\refint\sas360-test.dll
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.pdb
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.genruntimeconfig.cache
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ref\sas360-test.dll
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\App.baml
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Border.baml
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Brushes.baml
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Button.baml
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Combobox.baml
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Label.baml
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Textbox.baml
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\EasyModbus.dll
+C:\Users\Ander\Documents\Masermic\Proyecto_SAS360\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Tabcontrol.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.csproj.AssemblyReference.cache
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Border.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Brushes.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Button.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Checkbox.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Combobox.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\DecimalUpDown.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Expander.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Gridview.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Label.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Listview.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Tabcontrol.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Textblock.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\Textbox.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\DigitalChangeWindow.g.cs
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\MainWindow.g.cs
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\SettingAppWindow.g.cs
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\SettingModbusVarWindow.g.cs
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\App.g.cs
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test_Content.g.cs
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test_MarkupCompile.cache
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test_MarkupCompile.lref
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\sas360-test.exe
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\sas360-test.deps.json
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\sas360-test.runtimeconfig.json
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\sas360-test.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\sas360-test.pdb
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\CsvHelper.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\EasyModbus.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.NET5.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\Xceed.Wpf.Toolkit.NET5.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\System.IO.Ports.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\unix\lib\net6.0\System.IO.Ports.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.IO.Ports.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\App.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\DigitalChangeWindow.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\MainWindow.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\SettingAppWindow.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\SettingModbusVarWindow.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.g.resources
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.AssemblyInfoInputs.cache
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.AssemblyInfo.cs
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.csproj.CoreCompileInputs.cache
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.csproj.CopyComplete
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\refint\sas360-test.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.pdb
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\sas360-test.genruntimeconfig.cache
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ref\sas360-test.dll
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\ResourceDictionary\DashedBorder.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\CustomControl\DashedBorder.g.cs
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\CustomControl\DashedBorder.baml
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\EditInternalConfigWindow.g.cs
+C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\obj\Debug\net6.0-windows\Window\EditInternalConfigWindow.baml

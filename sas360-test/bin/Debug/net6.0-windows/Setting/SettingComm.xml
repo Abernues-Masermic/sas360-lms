@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<body>
+  <unit_id>4</unit_id>
+  <comm_port>COM6</comm_port>
+  <baud_rate>38400</baud_rate>
+  <conn_timeout>1000</conn_timeout>
+  <read_memory>1000</read_memory>
+</body>

@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>sas360_test</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>sas360icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\actualizar.png" />
+    <None Remove="Images\add.png" />
+    <None Remove="Images\apply.png" />
+    <None Remove="Images\back_icon.png" />
+    <None Remove="Images\communication.png" />
+    <None Remove="Images\delete.png" />
+    <None Remove="Images\edit.png" />
+    <None Remove="Images\excel.png" />
+    <None Remove="Images\exit.png" />
+    <None Remove="Images\eye.png" />
+    <None Remove="Images\forward_icon.png" />
+    <None Remove="Images\masermic_sin_mechatronic_v2.png" />
+    <None Remove="Images\SASicon3.png" />
+    <None Remove="Images\Save.png" />
+    <None Remove="Images\senspain.png" />
+    <None Remove="Images\senspain_360.png" />
+    <None Remove="Images\senspain_360_white.png" />
+    <None Remove="Images\senspain_logo.png" />
+    <None Remove="Images\senspain_solutions.png" />
+    <None Remove="Images\senspain_solutions_white.png" />
+    <None Remove="Images\settings.png" />
+    <None Remove="Images\Start.png" />
+    <None Remove="Images\Stop.png" />
+    <None Remove="Images\visualizar.png" />
+    <None Remove="Images\wait.png" />
+    <None Remove="Images\warning.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="sas360icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="30.0.1" />
+    <PackageReference Include="EasyModbusTCP" Version="5.6.0" />
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.0" />
+    <PackageReference Include="System.IO.Ports" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\actualizar.png" />
+    <Resource Include="Images\add.png" />
+    <Resource Include="Images\apply.png" />
+    <Resource Include="Images\back_icon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\communication.png" />
+    <Resource Include="Images\delete.png" />
+    <Resource Include="Images\edit.png" />
+    <Resource Include="Images\excel.png" />
+    <Resource Include="Images\exit.png" />
+    <Resource Include="Images\eye.png" />
+    <Resource Include="Images\forward_icon.png" />
+    <Resource Include="Images\masermic_sin_mechatronic_v2.png" />
+    <Resource Include="Images\SASicon3.png" />
+    <Resource Include="Images\Save.png" />
+    <Resource Include="Images\senspain_360.png" />
+    <Resource Include="Images\senspain_360_white.png" />
+    <Resource Include="Images\senspain_logo.png" />
+    <Resource Include="Images\senspain_solutions.png" />
+    <Resource Include="Images\senspain_solutions_white.png" />
+    <Resource Include="Images\settings.png" />
+    <Resource Include="Images\Start.png" />
+    <Resource Include="Images\Stop.png" />
+    <Resource Include="Images\visualizar.png" />
+    <Resource Include="Images\wait.png" />
+    <Resource Include="Images\warning.png" />
+  </ItemGroup>
+
+</Project>

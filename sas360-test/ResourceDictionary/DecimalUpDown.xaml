@@ -1,0 +1,49 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit">
+
+    <Style x:Key="DecimalUpDownStyle" TargetType="{x:Type xctk:DecimalUpDown}">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="BorderBrush" Value="Gray"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="xctk:DecimalUpDown">
+                    <xctk:ButtonSpinner x:Name="PART_Spinner" 
+                                        AllowSpin="{Binding AllowSpin, RelativeSource={RelativeSource TemplatedParent}}" 
+                                        BorderBrush="Black" 
+                                        BorderThickness="1" 
+                                        Background="{TemplateBinding Background}" 
+                                        IsTabStop="False" 
+                                        ShowSpinner="{Binding ShowSpinner, RelativeSource={RelativeSource TemplatedParent}}" >
+                        
+                        <xctk:WatermarkTextBox x:Name="PART_TextBox" 
+                                               AutoMoveFocus="{Binding AutoMoveFocus, RelativeSource={RelativeSource TemplatedParent}}" 
+                                               AutoSelectBehavior="{Binding AutoSelectBehavior, RelativeSource={RelativeSource TemplatedParent}}" 
+                                               AcceptsReturn="False" 
+                                               BorderThickness="0" 
+                                               Background="{TemplateBinding Background}"
+                                               ContextMenu="{TemplateBinding ContextMenu}"
+                                               Foreground="{TemplateBinding Foreground}"
+                                               FontWeight="{TemplateBinding FontWeight}"
+                                               FontStyle="{TemplateBinding FontStyle}" 
+                                               FontStretch="{TemplateBinding FontStretch}"
+                                               FontSize="12" 
+                                               FontFamily="Helvetica LT Std" 
+                                               HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                               IsTabStop="{TemplateBinding IsTabStop}"
+                                               IsReadOnly="{Binding IsReadOnly, RelativeSource={RelativeSource TemplatedParent}}"
+                                               MinWidth="20" 
+                                               Padding="{TemplateBinding Padding}" 
+                                               TextAlignment="{Binding TextAlignment,  RelativeSource={RelativeSource TemplatedParent}}" 
+                                               TextWrapping="NoWrap" TabIndex="{TemplateBinding TabIndex}"
+                                               VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" 
+                                               WatermarkTemplate="{Binding WatermarkTemplate, RelativeSource={RelativeSource TemplatedParent}}"
+                                               Watermark="{Binding Watermark, RelativeSource={RelativeSource TemplatedParent}}" />
+                    </xctk:ButtonSpinner>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+    </Style>
+</ResourceDictionary>
