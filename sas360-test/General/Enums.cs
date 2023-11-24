@@ -6,6 +6,12 @@
         ON = 1
     }
 
+
+    public enum PROGRAM_ACTIONS {
+        SAVE = 0,
+        LOAD = 1
+    }
+
     public enum BAUD_RATE
     {
         BAUD_9600 = 9600,
@@ -30,68 +36,224 @@
         READ = 2,
         WRITE = 3,
         ERROR_CONNECT = 4,
-        ERROR_READ = 5,
-        ERROR_WRITE = 6,
+        DISCONNECT_FROM_READ_WRITE = 5,
     }
 
+
+    public  enum COMMAND_WRITE_LOCATION
+    {
+        NOT_DEFINED = -1,
+        MAINTENNANCE = 0,
+        RTC_UTC = 1,
+        REPORTED_REGISTER = 2,
+        INTERNAL_CONFIG = 3,
+        SAS360CON_CONFIG_INSTALLATION = 4,
+        SAS360CON_CONFIG_VEHICLE_CONFIG = 5,
+        SAS360CON_CONFIG_DETECTION_AREA = 6,
+        SAS360CON_CONFIG_UWB_COMM= 7,
+        SAS360CON_CONFIG_MISCELLANEOUS = 8,
+        SAS360CON_CONFIG_OUTPUT = 9,
+        SAS360CON_CFG_RECORDING = 10,
+    }
+
+    public enum SEND_COMMAND_STATE
+    {
+        OK = 1,
+        ERROR = 2,
+        WARNING = 3
+    }
+
+
+    public enum MAIN_MENU_TAB
+    {
+        STATE = 0,
+        CONFIG = 1,
+        MEMORY = 2,
+        MAINTENANCE = 3
+    }
+
+    public enum CONFIG_MENU_TAB
+    {
+        SAS360CON_INTERNAL_CFG =0,
+        SAS360CON_CFG = 1,
+        IOT_CFG = 2
+    }
+
+
+    #region MEMORY
 
     public enum ENABLE_READ_MEMORY_BIT
     {
-        SAS360CON_INTERNAL_CONFIG = 0,
-        SAS360CON_CONFIG_SAS360CON = 1,
-        SAS360CON_CONFIG_IOT_AZURE = 2,
-        SAS360CON_IMAGEN_SAS360CON = 3,
-        SAS360CON_IMAGEN_IOT_AZURE = 4,
+        SAS360CON_INTERNAL_CFG = 0,
+        SAS360CON_CFG = 1,
+        IOT_CFG = 2,
+        SAS360CON_IMAGE = 3,
+        IOT_IMAGE = 4,
+        SAS360CON_MAINTENNANCE = 5,
 
-        SAS360CON_TAG_CLOSEST_BASE_CON = 5,
-        SAS360CON_TAG_CLOSEST_EXTENDED_CON = 6,
-        SAS360CON_TAG_CLOSEST_BASE_UWB = 7,
-        SAS360CON_TAG_CLOSEST_EXTENDED_UWB = 8,
+        UWB_INTERNAL_CFG = 6,
+        UWB_IMAGE = 7,
 
-        SAS360CON_ZONE_CLOSEST_BASE_CON = 9,
-        SAS360CON_ZONE_CLOSEST_EXTENDED_CON = 10,
+        CONSOLE_CLOSEST_TAGS_BASE = 8,
+        CONSOLE_CLOSEST_TAGS_EXTENDED = 9,
 
-        SAS360CON_NVREG = 11,
+        CONSOLE_CLOSEST_ZONE_BASE = 10,
+        CONSOLE_CLOSEST_ZONE_EXTENDED = 11,
+
+        UWB_CLOSEST_TAGS_BASE = 12,
+        UWB_CLOSEST_TAGS_EXTENDED = 13,
+        UWB_CLOSEST_ZONE_BASE = 14,
+        UWB_CLOSEST_ZONE_EXTENDED = 15,
+
+        SAS360CON_NVREG = 16,
+        SAS360CON_COMMAND = 17,
+
+        SAS360CON_RECORD_EVENTS = 18,
+        SAS360CON_RECORD_HISTS = 19,
     }
-
-
 
     public enum MEMORY_READ_STATE {
-        IMAGE_SAS360CON = 0,
-        IMAGE_IOT = 1,
-        CONSOLE_CLOSEST_TAGS_BASE = 2,
-        UWB_CLOSEST_TAGS_BASE = 3,
-        CONSOLE_CLOSEST_ZONE_BASE = 4,
-        NVREG = 5,
+        SAS360CON_INTERNAL_CFG = 0,
+        SAS360CON_CFG = 1,
+        IOT_CFG = 2,
+        UWB_INTERNAL_CFG = 3,
+
+        SAS360CON_IMAGE = 4,
+        IOT_IMAGE = 5,
+        SAS360CON_MAINTENNANCE = 6,
+
+        UWB_IMAGE = 7,
+
+        CONSOLE_CLOSEST_TAGS_BASE_1 = 8,
+        CONSOLE_CLOSEST_TAGS_BASE_2 = 9,
+        CONSOLE_CLOSEST_TAGS_BASE_3 = 10,
+
+        CONSOLE_CLOSEST_ZONE_BASE_1 = 11,
+        CONSOLE_CLOSEST_ZONE_BASE_2 = 12,
+
+        UWB_CLOSEST_TAGS_BASE = 13,
+        UWB_CLOSEST_ZONE_BASE = 14,
+
+        SAS360CON_NVREG = 15,
     }
 
-    public enum MEMORY_MAP_READ
+    public enum MEMORY_CONFIG_TYPE : int
     {
-        SAS360CON_INTERNAL_CONFIG = 100,
-        SAS360CON_CONFIGURATION_SAS360CON = 200,
-        SAS360CON_CONFIGURATION_IOT_AZURE = 400,
-        SAS360CON_IMAGEN_SAS360CON = 600,
-        SAS360CON_IMAGEN_IOT_AZURE = 800,
-        SAS360CON_NVREG = 900,
-        SAS360CON_TAG_12_CLOSEST_BASE_CON = 1000,
-        SAS360CON_TAG_12_CLOSEST_EXTENDED_CON = 1100,
-        SAS360CON_ZONE_16_CLOSEST_BASE_CON = 1400,
-        SAS360CON_ZONE_16_CLOSEST_EXTENDED_CON = 1500,
-        SAS360CON_TAG_12C_BASE_UWB_1 = 2000,
-        SAS360CON_TAG_12C_BASE_UWB_2 = 2100,
-        SAS360CON_TAG_12C_BASE_UWB_3 = 2200,
-        SAS360CON_TAG_12C_EXTENDED_UWB_1 = 3000,
-        SAS360CON_TAG_12C_EXTENDED_UWB_2 = 3200,
-        SAS360CON_TAG_12C_EXTENDED_UWB_3 = 3400,
-        SAS360CON_RECORDED_EVENTS = 5000,
-        SAS360CON_RECORDS_HISTORICS = 10000,
+        NONE = -1,
+
+        SAS360CON_INTERNAL_CFG = 0,
+        SAS360CON_CFG = 1,
+        IOT_CFG = 2,
+        SAS360CON_IMAGE = 3,
+        IOT_IMAGE = 4,
+        SAS360CON_MAINTENNANCE = 5,
+
+        UWB_INTERNAL_CFG = 6,
+        UWB_IMAGE = 7,
+
+        CONSOLE_CLOSEST_TAGS_BASE_1 = 8,
+        CONSOLE_CLOSEST_TAGS_BASE_2 = 9,
+        CONSOLE_CLOSEST_TAGS_BASE_3 = 10,
+        CONSOLE_CLOSEST_TAGS_EXTENDED = 11,
+
+        CONSOLE_CLOSEST_ZONE_BASE_1 = 12,
+        CONSOLE_CLOSEST_ZONE_BASE_2 = 13,
+        CONSOLE_CLOSEST_ZONE_EXTENDED = 14,
+
+        UWB_CLOSEST_TAGS_BASE = 15,
+        UWB_CLOSEST_TAGS_EXTENDED = 16,
+        UWB_CLOSEST_ZONE_BASE = 17,
+        UWB_CLOSEST_ZONE_EXTENDED = 18,
+
+        SAS360CON_NVREG = 19,
+        SAS360CON_COMMANDS = 20,
+
+        SAS360CON_EVENT_LOG = 21,
+        SAS360CON_HIST_LOG = 22,
     }
 
-    public enum MEMORY_MAP_WRITE
+
+    public enum MEMORY_SAS360CON_CFG_FIELD_POS_INDEX
     {
-        SAS360CON_CONFIGURATION_SAS360 = 200,
-        SAS360CON_CONFIGURATION_IOT = 400,
-        SAS360CON_COMMANDS = 0
+        ESTRUCTURE = 0,
+        INSTALLATION = 1,
+        VEHICLE_CFG = 2,
+        DETECTION_AREA = 3,
+        E_S = 4,
+        TEMP_FILTERS = 5,
+        UWB_COM = 6,
+        UWB_TAG = 7,
+        RECORDING = 8,
+        RESERVED_FUTURE = 9,
+        CALCULADAS = 10
+    }
+
+    public enum MEMORY_SAS360CON_IMAGE_FIELD_POS_INDEX
+    {
+        ESTADOS_BOOLEANOS = 0,
+        EA_SENSORES = 1,
+        TIEMPO_PROCESADO = 2,
+        NVREG = 3,
+        MAIN = 4,
+        LIN_POLLING = 5,
+        PROCESSED_TAGS = 6,
+        FIELD_POS = 7,
+    }
+
+
+    public enum MEMORY_SAS360CON_CFG_FIELD_POS_INI
+    {
+        ESTRUCTURE = 0,
+        INSTALLATION = 2,
+        VEHICLE_CFG = 8,
+        DETECTION_AREA = 20,
+        E_S = 50,
+        TEMP_FILTERS = 60,
+        UWB_COM = 70,
+        UWB_TAG = 80,
+        RECORDING = 90,
+        RESERVED_FUTURE = 106,
+        CALCULADAS = 116
+    }
+
+    public enum MEMORY_SAS360CON_IMAGE_FIELD_POS_INI
+    {
+        ESTADOS_BOOLEANOS =  0,
+        EA_SENSORES = 20,
+        TIEMPO_PROCESADO = 30,
+        NVREG = 40,
+        MAIN = 50,
+        LIN_POLLING = 60,
+        PROCESSED_TAGS = 84,
+        FIELD_POS = 110,
+    }
+
+
+    public enum MEMORY_SAS360CON_CFG_FIELD_SIZE
+    {
+        ESTRUCTURE = 2,
+        INSTALLATION = 6,
+        VEHICLE_CFG = 12,
+        DETECTION_AREA = 30,
+        E_S = 10,
+        TEMP_FILTERS = 10,
+        UWB_COM = 10,
+        UWB_TAG = 10,
+        RECORDING = 16,
+        RESERVED_FUTURE = 10,
+        CALCULADAS = 4
+    }
+
+    public enum MEMORY_SAS360CON_IMAGE_FIELD_SIZE
+    {
+        ESTADOS_BOOLEANOS = 20,
+        EA_SENSORES = 10,
+        TIEMPO_PROCESADO = 10,
+        NVREG = 10,
+        MAIN = 10,
+        LIN_POLLING = 24,
+        PROCESSED_TAGS = 26,
+        FIELD_POS = 10,
     }
 
 
@@ -115,42 +277,21 @@
         FORMAT = 4
     }
 
-    public enum MEMORY_CONFIG_TYPE : int
-    {
-        INTERNAL_CONFIG = 0,
-        CONFIG_SAS360CON = 1,
-        CONFIG_IOT = 2,
-        IMAGE_SAS360CON = 3,
-        IMAGE_IOT = 4,
-        CONSOLE_CLOSEST_TAGS_BASE = 5,
-        CONSOLE_CLOSEST_TAGS_EXTENDED = 6,
-        UWB_CLOSEST_TAGS_BASE = 7,
-        UWB_CLOSEST_TAGS_EXTENDED = 8,
-        CONSOLE_CLOSEST_ZONE_BASE = 9,
-        CONSOLE_CLOSEST_ZONE_EXTENDED = 10,
-        NVREG = 13,
-    }
+
+    #endregion
 
 
-
-    public enum DETECTION_AREA_COLORS
-    {
-        RED = 0,
-        ORANGE = 1,
-        YELLOW = 2,
-        GENERAL = 3,
-    }
 
     public enum DETECTION_AREA_POS_IN_ARRAY
     {
-        FRONT = 0,
-        RIGHT = 1,
-        BACK = 2,
-        LEFT = 3
+        YELLOW = 0,
+        ORANGE = 1,
+        RED = 2,
+        INTERIOR = 3,
     }
 
-    public enum ACTUACIONES_SALIDAS_POS_IN_ARRAY { 
-        RELE_1 =0,
+    public enum ACTUACIONES_SALIDAS_POS_IN_ARRAY {
+        RELE_1 = 0,
         RELE_2 = 1,
         RELE_3 = 2,
         RELE_4 = 3,
@@ -158,40 +299,8 @@
         TRANS_2 = 5,
     }
 
-    public enum HYSTERESYS_POS_IN_ARRAY {
-        AREA_D = 0,
-        AREA_A = 1,
-        AREA_N = 2,
-        AREA_R = 3,
-        SECTOR_CHANGE_ANGLE = 4,
-        CLOSEST_ANTENNA_CHANGE = 5,
-        CLOSEST_5C_CHANGE = 6
-    }
 
-
-    public enum SAS360CON_STATE : byte
-    {
-        STATE_INIT_AUTODIAG_SAS360CON_U8 = 0,
-        STATE_INIT_GESTION_DE_ACTUALIZACIONES_U8 = 1,
-        STATE_INIT_VERIFICACIÓN_LIN_U8 = 2,
-        STATE_INIT_AUTODET_SELF_CONTAG_U8 = 3,
-        STATE_INIT_END_U8 = 4,
-        STATE_STANDARD_DETECTION_U8 = 5,
-        STATE_LOW_POWER_MODE_U8 = 6,
-        STATE_LOW_INTERNAL_ERROR_U8 = 7,
-        UNDEFINED = 8,
-    }
-
-    public enum SAS360CON_SUBSTATE : byte
-    {
-        SUBSTATE_INDEX_TBD_U8_0 = 0,
-        SUBSTATE_INDEX_TBD_U8_1 = 1,
-        SUBSTATE_INDEX_TBD_U8_2 = 2,
-        UNDEFINED = 8,
-    }
-
-
-    public enum BUTTON_EDIT_INTERNAL_CONFIG_POS { 
+    public enum BUTTON_EDIT_INTERNAL_CONFIG_POS {
         SERIAL_NUMBER = 0,
         ID_MANUFACT = 1,
         ID_TAG = 2,
@@ -207,16 +316,30 @@
         OUTPUT_EXT = 2,
         OUTPUT_LED = 3,
         INTERNAL_ERROR = 4,
-        LIN_POOLING_CONFIG = 5,
-        LIN_POOLING_STATE = 6,
+        LIN_POOLING_READ= 5,
+        LIN_POOLING_WRITE = 6,
+        LIN_POOLING_WRITE_BROADCAST = 7,
+        LIN_POOLING_STATE = 8,
     }
 
-
-    public enum LABEL_ANTENNA_ARRAY_POS { 
-        POS_X = 0, 
+    public enum LABEL_ANTENNA_ARRAY_POS {
+        POS_X = 0,
         POS_Y = 1,
-        ORIENTATION = 2
     }
+
+
+    public enum RADIO_CSV_TAG_ZONE_TYPE{
+        NONE =0,
+        TAG =1,
+        ZONE = 2
+    }
+
+    public enum RADIO_CSV_MEMORY_TYPE { 
+        NONE = 0,
+        BASE = 1,
+        EXTENDED = 2,
+    }
+
 
     public enum AUDIO
     {
@@ -255,6 +378,32 @@
     }
 
 
+    #region MASK
+
+    public enum MASK_SAS360CON_STATE : ushort
+    {
+        NOT_DEFINED = 0,
+        INIT_AUTODIAG_SAS360CON = 1,
+        INIT_GESTION_UPDATES = 2,
+        NIT_VERIFICACION_LIN = 3,
+        INIT_AUTODET_SELF_CONTAG = 4,
+        INIT_END = 5,
+        STANDARD_DETECTION = 6,
+        LOW_POWER_MODE = 7,
+        INTERNAL_ERROR = 8,
+        STATE_UNKNOWN = 9,
+    }
+
+    public enum MASK_SAS360CON_SUBSTATE : ushort
+    {
+        INDEX_VALUE_0 = 0,
+        INDEX_VALUE_1 = 1,
+        INDEX_VALUE_2 = 2,
+        INDEX_VALUE_3 = 3,
+        INDEX_VALUE_4 = 4,
+        NOT_DEFINED = 5,
+    }
+
     public enum MASK_AUTOTEST
     {
         DWM_OK = 0,
@@ -278,7 +427,7 @@
     }
 
 
-    public enum MASK_INTERNAL_ERROR
+    public enum MASK_ERROR
     {
         SAS360CON_ERROR = 0,
         INIT_SELF_CONTAG_DETECTION = 1,
@@ -291,35 +440,47 @@
         OPE_TAG_CONFIG_MODE = 8,
     }
 
-    public enum MASK_LIN_POOLING_CONFIG
+    public enum MASK_LIN_READ_POOL
     {
-        POOL_LIN1_ENABLED = 0,
-        POOL_LIN2_ENABLED = 1,
-        POOL_LIN3_ENABLED = 2,
-        POOL_LIN4_RES_ENABLED = 3,
-        POOL_LIN5_RES_ENABLED = 4,
-        POOL_LIN6_RES_ENABLED = 5,
-        POOL_LIN7_RES_ENABLED = 6,
-        POOL_LIN8_RES_ENABLED = 7,
-        POOL_UWB_IMAGE_READ_ENABLED = 8,
-        POOL_UWB_5C_TAG_BASE_ENABLED = 9,
-        POOL_UWB_5C_TAG_EXT_ENABLED = 10,
-        POOL_12C_TAG_BASE_ENABLED = 11,
-        POOL_12C_TAG_EXT_ENABLED = 12,
-        POOL_15C_ZONE_BASE_ENABLED = 13,
-        POOL_15C_ZONE_EXT_ENABLED = 14,
+        IMAGE_ENABLED = 0,
+        _12C_TAG_BASE_ENABLED = 1,
+        _12C_TAG_EXT_ENABLED = 2,
+        _12C_ZONE_BASE_ENABLED = 3,
+        _12C_ZONE_EXT_ENABLED = 4,
+        INTERNAL_CONFIG_SINGLE = 5,
+        LAST_COMMAND_SINGLE = 6
     }
 
-    public enum MASK_LIN_STATE
+    public enum MASK_LIN_WRITE_POOL
     {
-        STATE_LIN1_OK = 0,
-        STATE_LIN2_OK = 1,
-        STATE_LIN3_OK = 2,
-        STATE_LIN4_RES_OK = 3,
-        STATE_LIN5_RES_OK = 4,
-        STATE_LIN6_RES_OK = 5,
-        STATE_LIN7_RES_OK = 6,
-        STATE_LIN8_RES_OK = 7,
+        CMD_SET_RTC_SINGLE =0,
+        CMD_CLEAR_RESET_SINGLE = 1,
+        CMD_SET_CONFIG_SINGLE = 2,
+        CMD_SET_SELF_CONTAG_SINGLE = 3,
+        CMD_SET_SELF_DRVTAG_SINGLE = 4,
+        CMD_GATEWAY_TAG_ARRAY = 8,
+        CMD_GATEWAY_ZONE_ARRAY = 9
+    }
+
+    public enum MASK_LIN_WRITE_POOL_BROADCAST { 
+        CMD_TAG_BROADCAST_CODIF_1_5 =0,
+        CMD_TAG_BROADCAST_CODIF_6_10 = 1,
+        CMD_TAG_BROADCAST_CODIF_11_15 = 2,
+        CMD_ZONE_BROADCAST_CODIF_1_5 = 3,
+        CMD_ZONE_BROADCAST_CODIF_6_10 = 4,
+        CMD_ZONE_BROADCAST_CODIF_11_15 = 5,
+    }
+
+    public enum MASK_LIN_STATE:ushort
+    {
+        COM_UWB1_OK = 0,
+        COM_UWB2_OK = 1,
+        COM_UWB3_OK = 2,
+        COM_UWB4_OK = 3,
+        INTEGRITY_UWB_1_OK = 4,
+        INTEGRITY_UWB_2_OK = 5,
+        INTEGRITY_UWB_3_OK = 6,
+        INTEGRITY_UWB_4_OK = 7,
     }
 
     public enum MASK_UWB_CODIF
@@ -339,21 +500,13 @@
         ERROR_BIT3 = 15,
     }
 
-
-
-    public enum SEND_COMMAND_STATE { 
-        OK = 1,
-        ERROR = 2,
-        WARNING = 3
-    }
+    #endregion
 
 
 
+    #region TAG -ZONE
 
-
-    #region TAG
-
-    public enum SAS360TAG_CODIF_STATE: byte
+    public enum MASK_TAG_STATUS: byte
     {
         TAG_OK = 0,
         INTENAL_ERROR = 1,
@@ -373,7 +526,7 @@
         ERROR_CODE_BIT3 = 15,
     }
 
-    public enum SAS360TAG_UWB_COMMAND_CODIF : byte
+    public enum MASK_SAS360TAG_UWB_COMMAND : byte
     {
         CMD_UWBx_ORIGING_BIT0 = 0,
         CMD_UWBx_ORIGING_BIT1 = 1,
@@ -393,20 +546,8 @@
         REPORTED_REGISTER_BIT3 = 15,
     }
 
-    public enum SAS360TAG_BATTERY_LEVEL : byte
-    {
-        LEVEL_00_00 = 0,
-        LEVEL_12_50 = 1,
-        LEVEL_25_00 = 2,
-        LEVEL_27_50 = 3,
-        LEVEL_50_00 = 4,
-        LEVEL_62_50 = 5,
-        LEVEL_75_00 = 6,
-        LEVEL_87_50 = 7,
-    }
 
-
-    public enum SAS360ZONE_CODIF_STATE : byte
+    public enum MASK_ZONE_STATUS : byte
     {
         ZONE_OK = 0,
         ZONE_INTERNAL_ERROR = 1,
@@ -426,7 +567,7 @@
         ERROR_CODE_BIT3 = 15,
     }
 
-    public enum SAS360TAG_ZONE_TYPE
+    public enum MASK_TAG_ZONE_TYPE
     {
         SAS360TAG_PED = 0x00,
         SAS360TAG_DRV = 0x01,
@@ -450,14 +591,25 @@
 
     public enum DIGITAL_STATES_IN_LIST { 
         INPUT =0,
-        OUTPUT_1 = 1,
-        OUTPUT_2 = 2,
-        OUTPUT_3 = 3,
-        LED_1 = 4,
-        LED_2 = 5,
+        OUTPUT_1_INT = 1,
+        OUTPUT_2_EXT = 2,
+        OUTPUT_3_LED = 3,
+        CODIF_LED_1 = 4,
+        CODIF_LED_2 = 5,
         AUDIO_1 = 6,
         AUDIO_2 = 7,
     }
+    public enum MAINT_FORCED_DIGITAL_STATES_IN_LIST
+    {
+        OUTPUT_1_INT = 1,
+        OUTPUT_2_EXT = 2,
+        OUTPUT_3_LED = 3,
+        CODIF_LED_1 = 4,
+        CODIF_LED_2 = 5,
+        AUDIO_1 = 6,
+        AUDIO_2 = 7,
+    }
+
 
     public enum MASK_CODIF_DI1
     {

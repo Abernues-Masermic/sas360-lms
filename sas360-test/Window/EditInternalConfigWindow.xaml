@@ -41,25 +41,25 @@
                             <WrapPanel x:Name="Wrappanel_param1"  Orientation="Horizontal" Margin="3">
                                 <Label x:Name="Label_param1" Content="PARAM 1"  Style="{StaticResource Label_standard_bold}" Padding="6" Width="200"/>
                                 <xctk:DecimalUpDown Name="DecimalUpDown_param1"   Style="{StaticResource DecimalUpDownStyle}" Width="100"/>
-                                <Label x:Name="Label_type1" Content="UInt16" Margin="5,0,0,0"  Style="{StaticResource Label_standard_bold}" Padding="6" Width="80"/>
+                                <Label x:Name="Label_type1" Content="UInt16" Margin="5,0,0,0"  Style="{StaticResource Label_standard_bold}" Padding="6" Width="75"/>
                             </WrapPanel>
 
                             <WrapPanel x:Name="Wrappanel_param2"  Orientation="Horizontal" Margin="3">
                                 <Label x:Name="Label_param2" Content="PARAM 2"  Style="{StaticResource Label_standard_bold}" Padding="6" Width="200"/>
                                 <xctk:DecimalUpDown Name="DecimalUpDown_param2"   Style="{StaticResource DecimalUpDownStyle}" Width="100"/>
-                                <Label x:Name="Label_type2" Content="UInt16" Margin="5,0,0,0"  Style="{StaticResource Label_standard_bold}" Padding="6" Width="80"/>
+                                <Label x:Name="Label_type2" Content="UInt16" Margin="5,0,0,0"  Style="{StaticResource Label_standard_bold}" Padding="6" Width="75"/>
                             </WrapPanel>
 
                             <WrapPanel x:Name="Wrappanel_param3"  Orientation="Horizontal" Margin="3">
                                 <Label x:Name="Label_param3" Content="PARAM 3"  Style="{StaticResource Label_standard_bold}" Padding="6" Width="200"/>
                                 <xctk:DecimalUpDown Name="DecimalUpDown_param3"   Style="{StaticResource DecimalUpDownStyle}" Width="100"/>
-                                <Label x:Name="Label_type3" Content="UInt16" Margin="5,0,0,0"  Style="{StaticResource Label_standard_bold}" Padding="6" Width="80"/>
+                                <Label x:Name="Label_type3" Content="UInt16" Margin="5,0,0,0"  Style="{StaticResource Label_standard_bold}" Padding="6" Width="75"/>
                             </WrapPanel>
 
                             <WrapPanel x:Name="Wrappanel_param4"  Orientation="Horizontal" Margin="3">
                                 <Label x:Name="Label_param4" Content="PARAM 4"  Style="{StaticResource Label_standard_bold}" Padding="6" Width="200"/>
                                 <xctk:DecimalUpDown Name="DecimalUpDown_param4"   Style="{StaticResource DecimalUpDownStyle}" Width="100"/>
-                                <Label x:Name="Label_type4" Content="UInt16" Margin="5,0,0,0"  Style="{StaticResource Label_standard_bold}" Padding="6" Width="80"/>
+                                <Label x:Name="Label_type4" Content="UInt16" Margin="5,0,0,0"  Style="{StaticResource Label_standard_bold}" Padding="6" Width="75"/>
                             </WrapPanel>
 
                         </WrapPanel>

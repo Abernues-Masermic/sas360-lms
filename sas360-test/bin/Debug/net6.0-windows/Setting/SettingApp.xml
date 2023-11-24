@@ -1,28 +1,83 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <body>
-  <Simulator_mode>1</Simulator_mode>
-  <Panel_area>1500</Panel_area>
-  <Grid_area>100</Grid_area>
-  <Total_closest_tags>12</Total_closest_tags>
-  <Total_closest_zone>16</Total_closest_zone>
+  <Depur_mode>1</Depur_mode>
+  <Simulator_mode>0</Simulator_mode>
+  <Draw_map>1</Draw_map>
+  <Panel_area>5000</Panel_area>
+  <Grid_area>500</Grid_area>
+  <Total_closest_tags>15</Total_closest_tags>
+  <Total_closest_zone>12</Total_closest_zone>
   <Date_format>yyyy/MM/dd HH:mm:ss</Date_format>
   <Date_provider>en-GB</Date_provider>
-  <Enable_read_memory_bits>240</Enable_read_memory_bits>
-  <Write_code_init>170</Write_code_init>
+  <Memory_map_ini_0>100</Memory_map_ini_0>
+  <Memory_map_size_0>20</Memory_map_size_0>
+  <Memory_map_ini_1>200</Memory_map_ini_1>
+  <Memory_map_size_1>120</Memory_map_size_1>
+  <Memory_map_ini_2>400</Memory_map_ini_2>
+  <Memory_map_size_2>120</Memory_map_size_2>
+  <Memory_map_ini_3>600</Memory_map_ini_3>
+  <Memory_map_size_3>120</Memory_map_size_3>
+  <Memory_map_ini_4>800</Memory_map_ini_4>
+  <Memory_map_size_4>40</Memory_map_size_4>
+  <Memory_map_ini_5>900</Memory_map_ini_5>
+  <Memory_map_size_5>30</Memory_map_size_5>
+  <Memory_map_ini_6>4000</Memory_map_ini_6>
+  <Memory_map_size_6>80</Memory_map_size_6>
+  <Memory_map_ini_7>4100</Memory_map_ini_7>
+  <Memory_map_size_7>96</Memory_map_size_7>
+  <Memory_map_ini_8>1000</Memory_map_ini_8>
+  <Memory_map_size_8>300</Memory_map_size_8>
+  <Memory_map_ini_9>1300</Memory_map_ini_9>
+  <Memory_map_size_9>150</Memory_map_size_9>
+  <Memory_map_ini_10>1500</Memory_map_ini_10>
+  <Memory_map_size_10>240</Memory_map_size_10>
+  <Memory_map_ini_11>1800</Memory_map_ini_11>
+  <Memory_map_size_11>150</Memory_map_size_11>
+  <Memory_map_ini_12>2000</Memory_map_ini_12>
+  <Memory_map_size_12>480</Memory_map_size_12>
+  <Memory_map_ini_13>2500</Memory_map_ini_13>
+  <Memory_map_size_13>480</Memory_map_size_13>
+  <Memory_map_ini_14>3000</Memory_map_ini_14>
+  <Memory_map_size_14>480</Memory_map_size_14>
+  <Memory_map_ini_15>3500</Memory_map_ini_15>
+  <Memory_map_size_15>480</Memory_map_size_15>
+  <Memory_map_ini_16>9000</Memory_map_ini_16>
+  <Memory_map_size_16>22</Memory_map_size_16>
+  <Memory_map_ini_17>16</Memory_map_ini_17>
+  <Memory_map_size_17>12</Memory_map_size_17>
+  <Memory_map_ini_18>10000</Memory_map_ini_18>
+  <Memory_map_size_18>3584</Memory_map_size_18>
+  <Memory_map_ini_19>20000</Memory_map_ini_19>
+  <Memory_map_size_19>12288</Memory_map_size_19>
+  <Enable_read_memory_bits>197099</Enable_read_memory_bits>
+  <Write_code_ini>170</Write_code_ini>
   <Write_code_prod>90</Write_code_prod>
   <Write_code_depu>170</Write_code_depu>
-  <Path_internal_config>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\internal_config.csv</Path_internal_config>
-  <Path_config_sas360con>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\config_sas360con.csv</Path_config_sas360con>
-  <Path_config_iot>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\config_iot.csv</Path_config_iot>
-  <Path_image_sas360con>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\image_sas360con.csv</Path_image_sas360con>
-  <Path_image_iot>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\image_iot.csv</Path_image_iot>
-  <Path_console_closest_tags_base>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\console_closest_tags_base.csv</Path_console_closest_tags_base>
-  <Path_console_closest_tags_extended>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\console_closest_tags_extended.csv</Path_console_closest_tags_extended>
-  <Path_uwb_closest_tags_base>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\uwb_closest_tags_base.csv</Path_uwb_closest_tags_base>
-  <Path_uwb_closest_tags_extended>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\uwb_closest_tags_extended.csv</Path_uwb_closest_tags_extended>
-  <Path_console_closest_zone_base>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\console_closest_zone_base.csv</Path_console_closest_zone_base>
-  <Path_console_closest_zone_extended>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\console_closest_zone_extended.csv</Path_console_closest_zone_extended>
-  <Path_nvreg>
-  </Path_nvreg>
-  <Path_commands>C:\Masermic\Proyecto SAS360\Software\sas360-test\sas360-test\sas360-test\bin\Debug\net6.0-windows\MemoryMap\commands.csv</Path_commands>
+  <Path_sas360con_internal_cfg>C:\Program Files (x86)\Masermic\SAS360\SAS360_LMS_DEVELOP\sas360-lms\sas360-test\bin\Debug\net6.0-windows\MemoryMap\sas360con_internal_cfg.csv</Path_sas360con_internal_cfg>
+  <Path_sas360con_cfg>C:\Program Files (x86)\Masermic\SAS360\SAS360_LMS_DEVELOP\sas360-lms\sas360-test\bin\Debug\net6.0-windows\MemoryMap\sas360con_cfg.csv</Path_sas360con_cfg>
+  <Path_iot_cfg>
+  </Path_iot_cfg>
+  <Path_sas360con_image>C:\Program Files (x86)\Masermic\SAS360\SAS360_LMS_DEVELOP\sas360-lms\sas360-test\bin\Debug\net6.0-windows\MemoryMap\sas360con_image.csv</Path_sas360con_image>
+  <Path_iot_image>
+  </Path_iot_image>
+  <Path_sas360con_maintennance>C:\Program Files (x86)\Masermic\SAS360\SAS360_LMS_DEVELOP\sas360-lms\sas360-test\bin\Debug\net6.0-windows\MemoryMap\sas360con_maintennance.csv</Path_sas360con_maintennance>
+  <Path_uwb_internal_cfg>C:\Program Files (x86)\Masermic\SAS360\SAS360_LMS_DEVELOP\sas360-lms\sas360-test\bin\Debug\net6.0-windows\MemoryMap\uwb_internal_cfg.csv</Path_uwb_internal_cfg>
+  <Path_uwb_image>C:\Program Files (x86)\Masermic\SAS360\SAS360_LMS_DEVELOP\sas360-lms\sas360-test\bin\Debug\net6.0-windows\MemoryMap\uwb_image.csv</Path_uwb_image>
+  <Path_console_closest_tags_base>C:\Program Files (x86)\Masermic\SAS360\SAS360_LMS_DEVELOP\sas360-lms\sas360-test\bin\Debug\net6.0-windows\MemoryMap\console_closest_tags_base.csv</Path_console_closest_tags_base>
+  <Path_console_closest_tags_extended>
+  </Path_console_closest_tags_extended>
+  <Path_console_closest_zone_base>
+  </Path_console_closest_zone_base>
+  <Path_console_closest_zone_extended>
+  </Path_console_closest_zone_extended>
+  <Path_uwb_closest_tags_base>
+  </Path_uwb_closest_tags_base>
+  <Path_uwb_closest_tags_extended>
+  </Path_uwb_closest_tags_extended>
+  <Path_uwb_closest_zone_base>
+  </Path_uwb_closest_zone_base>
+  <Path_uwb_closest_zone_extended>
+  </Path_uwb_closest_zone_extended>
+  <Path_sas360con_nvreg>C:\Program Files (x86)\Masermic\SAS360\SAS360_LMS_DEVELOP\sas360-lms\sas360-test\bin\Debug\net6.0-windows\MemoryMap\sas360con_nvreg.csv</Path_sas360con_nvreg>
+  <Path_sas360con_commands>C:\Program Files (x86)\Masermic\SAS360\SAS360_LMS_DEVELOP\sas360-lms\sas360-test\bin\Debug\net6.0-windows\MemoryMap\sas360con_commands.csv</Path_sas360con_commands>
 </body>

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 
 
@@ -10,17 +12,17 @@ namespace sas360_test
         private Thread? m_thread;
 
 
-        public byte Unit_id { get; set; }
-        public string Comm_port { get; set; }
-        public int Baud_rate { get; set; }
+        public byte Unit_id { get; set; } = new byte();
+        public string Comm_port { get; set; } = string.Empty;
+        public int Baud_rate { get; set; } = new int();
 
-        public bool  Is_connected { get; set; }
+        public bool  Is_connected { get; set; } = new bool();
 
-        private Manage_comm m_manage_comm;
+        private Manage_comm m_manage_comm = new();
 
 
         public Manage_comm_thread() {
-            m_manage_comm = new Manage_comm(); ;
+            m_manage_comm = new Manage_comm();
         }
 
 
@@ -34,9 +36,12 @@ namespace sas360_test
 
         private void Connect_thread()
         {
-            Is_connected = m_manage_comm.Connect(Comm_port, Baud_rate, Unit_id);
-            if (Is_connected)
-                Manage_logs.SaveLogValue($"CONNECT RTU-> {Comm_port} / {Baud_rate} / {Unit_id}");
+            bool is_connected = m_manage_comm.Connect(Comm_port, Baud_rate, Unit_id);
+            if (is_connected)
+            {
+                Globals.GetTheInstance().Manage_delegate.Manage_rtu_to_main(RTU_ACTION.CONNECT, new List<ushort>(), MEMORY_CONFIG_TYPE.NONE);
+                Manage_logs.SaveLogValue($"CONNECT RTU -> {Comm_port} / {Baud_rate} / {Unit_id}");
+            }
         }
 
         public void Disconnect()
@@ -47,19 +52,18 @@ namespace sas360_test
         }
 
 
-        public Tuple<bool, int[]> Read_holding_registers_int32(int start_address, int number_off_registers)
+        public bool Read_holding_registers_int32(ushort start_address, ushort number_off_registers, MEMORY_CONFIG_TYPE memory_config_type)
         {
-            return m_manage_comm.Read_holding_registers_int32(start_address, number_off_registers);
+            return m_manage_comm.Read_holding_registers_int32(start_address, number_off_registers, memory_config_type);
         }
 
-        public bool Write_single_register(int start_address, int value)
+
+
+        public bool Write_multiple_registers(ushort start_address, int[] array_values, MEMORY_CONFIG_TYPE memory_config_type)
         {
-            return m_manage_comm.Write_single_register(start_address, value);
+            return m_manage_comm.Write_multiple_registers(start_address, array_values, memory_config_type);
         }
 
-        public bool Write_multiple_registers(int start_address, int[] values)
-        {
-            return m_manage_comm.Write_multiple_registers(start_address, values);
-        }
+
     }
 }

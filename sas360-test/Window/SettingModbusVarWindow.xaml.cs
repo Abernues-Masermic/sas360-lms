@@ -6,7 +6,7 @@ namespace sas360_test
 {
     public partial class SettingModbusVarWindow : Window
     {
-        public Modbus_var Modbus_var { get; set; }
+        public Modbus_var Modbus_var { get; set; } = new Modbus_var();
 
 
         #region Constructor
@@ -71,10 +71,10 @@ namespace sas360_test
         private void Button_save_Click(object sender, RoutedEventArgs e)
         {
 
-            Modbus_var.Addr = (double)Decimal_addr.Value;
+            Modbus_var.Addr = (double)Decimal_addr.Value!;
             Modbus_var.Name = Textbox_name.Text;
             Modbus_var.Unit = Textbox_unit.Text;
-            Modbus_var.Format = (double)Decimal_format.Value;
+            Modbus_var.Format = (double)Decimal_format.Value!;
             Modbus_var.TypeName = Combobox_type.Text;
 
             DialogResult = true;

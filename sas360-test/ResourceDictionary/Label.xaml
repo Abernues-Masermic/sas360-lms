@@ -23,6 +23,7 @@
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="Padding" Value="5,2,5,2"/>
     </Style>
 
     <Style x:Key="Label_standard" TargetType="Label">
@@ -37,6 +38,7 @@
     <Style x:Key="Label_standard_bold" TargetType="Label" BasedOn="{StaticResource Label_standard}">
         <Setter Property="FontWeight" Value="Bold"/>
     </Style>
+    
 
     <Style x:Key="Label_standard_state" TargetType="Label" BasedOn="{StaticResource Label_standard}">
         <Setter Property="FontWeight" Value="Bold"/>
@@ -48,6 +50,14 @@
     <Style x:Key="Label_standard_small" TargetType="Label" BasedOn="{StaticResource Label_standard}">
         <Setter Property="FontSize" Value="9"/>
         <Setter Property="Padding" Value="0"/>
+    </Style>
+
+    <Style x:Key="Label_standard_big" TargetType="Label" BasedOn="{StaticResource Label_standard}">
+        <Setter Property="FontSize" Value="12"/>
+    </Style>
+
+    <Style x:Key="Label_standard_big_bold" TargetType="Label" BasedOn="{StaticResource Label_standard_big}">
+        <Setter Property="FontWeight" Value="Bold"/>
     </Style>
 
     <Style x:Key="Label_setting" TargetType="Label">
@@ -66,6 +76,15 @@
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="Foreground" Value="#FF004F8B"/>
         <Setter Property="Background" Value="Transparent"/>
+    </Style>
+
+    <Style x:Key="Label_wait" TargetType="Label" BasedOn="{StaticResource Label_standard_bold}">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="BorderThickness" Value="2"/>
     </Style>
 
 

@@ -102,7 +102,7 @@ namespace sas360_test {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/sas360-test;component/window/digitalchangewindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/sas360-lms;component/window/digitalchangewindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Window\DigitalChangeWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

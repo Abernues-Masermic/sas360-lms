@@ -15,19 +15,6 @@
           }
         }
       },
-      "EasyModbusTCP/5.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/net40/EasyModbus.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net40/EasyModbus.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Extended.Wpf.Toolkit/4.5.0": {
         "type": "package",
         "compile": {
@@ -192,19 +179,6 @@
         "lib/netstandard2.0/CsvHelper.xml",
         "lib/netstandard2.1/CsvHelper.dll",
         "lib/netstandard2.1/CsvHelper.xml"
-      ]
-    },
-    "EasyModbusTCP/5.6.0": {
-      "sha512": "2a5a9smmIu0Tq5zdwMvgO+WDvUgH0JuNv/crAILrDKcNRb8P/AOx9PEyegBiMn1TGXLP3byu0zhsSSUrrVyyXw==",
-      "type": "package",
-      "path": "easymodbustcp/5.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "easymodbustcp.5.6.0.nupkg.sha512",
-        "easymodbustcp.nuspec",
-        "lib/net40/EasyModbus.dll",
-        "lib/net40/EasyModbus.xml"
       ]
     },
     "Extended.Wpf.Toolkit/4.5.0": {
@@ -391,7 +365,6 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "CsvHelper >= 30.0.1",
-      "EasyModbusTCP >= 5.6.0",
       "Extended.Wpf.Toolkit >= 4.5.0",
       "System.IO.Ports >= 7.0.0"
     ]
@@ -404,11 +377,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Masermic\\Proyecto SAS360\\Software\\sas360-test\\sas360-test\\sas360-test\\sas360-test.csproj",
-      "projectName": "sas360-test",
-      "projectPath": "C:\\Masermic\\Proyecto SAS360\\Software\\sas360-test\\sas360-test\\sas360-test\\sas360-test.csproj",
+      "projectUniqueName": "C:\\Masermic\\Proyecto SAS360\\Software\\sas360-lms - backup\\SAS360_LMS_DEVELOP\\sas360-lms\\sas360-test\\sas360-lms.csproj",
+      "projectName": "sas360-lms",
+      "projectPath": "C:\\Masermic\\Proyecto SAS360\\Software\\sas360-lms - backup\\SAS360_LMS_DEVELOP\\sas360-lms\\sas360-test\\sas360-lms.csproj",
       "packagesPath": "C:\\Users\\a.bernues\\.nuget\\packages\\",
-      "outputPath": "C:\\Masermic\\Proyecto SAS360\\Software\\sas360-test\\sas360-test\\sas360-test\\obj\\",
+      "outputPath": "C:\\Masermic\\Proyecto SAS360\\Software\\sas360-lms - backup\\SAS360_LMS_DEVELOP\\sas360-lms\\sas360-test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -447,10 +420,6 @@
             "target": "Package",
             "version": "[30.0.1, )"
           },
-          "EasyModbusTCP": {
-            "target": "Package",
-            "version": "[5.6.0, )"
-          },
           "Extended.Wpf.Toolkit": {
             "target": "Package",
             "version": "[4.5.0, )"
@@ -482,17 +451,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "El paquete \"EasyModbusTCP 5.6.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0-windows7.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
-      "libraryId": "EasyModbusTCP",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

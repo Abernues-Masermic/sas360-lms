@@ -6,10 +6,10 @@ namespace sas360_test
 {
     public partial class DigitalChangeWindow : Window
     {
-        public string Digital_name { get; set; }
-        public bool Is_activated { get; set; }
+        public string Digital_name { get; set; } = string.Empty;
+        public bool Is_activated { get; set; } = new bool();
 
-        public bool Save_changes { get; set; }
+        public bool Save_changes { get; set; } = new bool();
 
         #region Constructor
         public DigitalChangeWindow()

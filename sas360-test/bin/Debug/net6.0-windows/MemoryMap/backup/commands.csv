@@ -1,0 +1,38 @@
+Index;Name;Param1;Param2;Param3;Param4;Param5;Param6;Param7;Param8;Param9;
+2;CMD_SET_UTC_HOUR_U16;u32_rtc_value_utc;u16_rtc_milisec;;;;;;;;
+3;CMD_CPU_RESET_U16;ub16_force_reset;;;;;;;;;;
+
+11;CMD_FORCED_MODE_DIGITAL_OUT_MASK_U16; b16force_enable;ub16forced_ext_out_mask;ub16forced_int_out_mask;ub16forced_int_led_mask ;;;;;;;
+12;CMD_FORCED_MODE_LEDS_MASK_U16;b16force_enable;ub16forced_mask_leds_1;ub16forced_mask_leds_2;;;;;;;;
+
+21;CMD_SINGLE_AUDIO_TO_PLAY_OUT_INDEX_U16;u16forced_audio_index (0 a 31);;;;;;;;;;
+22;CMD_SINGLE_REQ_TEST_CELLULAR_CONECTION_U16;b16single_request;;;;;;;;;;
+23;CMD_SINGLE_REQ_TEST_AZURE_CONNECTION_U16;b16single_request;;;;;;;;;;
+24;CMD_SINGLE_REQ_TEST_GPS_CONNECTION_U16;b16single_request;;;;;;;;;;
+25;CMD_SINGLE_REQ_UWB_INTERNAL_CONFIG_DATA_U16;b16single_request;;;;;;;;;;
+
+41;CMD_MANTENI_ENABLE_REQ_UWB_CLOSEST_TAG_EXTENDED_DATA_U16;b16enable_request;;;;;;;;;;
+42;CMD_MANTENI_ENABLE_REQ_UWB_CLOSEST_ZONE_EXTENDED_DATA_U16;b16enable_request;;;;;;;;;;
+
+51;CMD_RESET_COUNTERS_LIN_COM_U16;b16force_reset_LIN_counters;;;;;;;;;;
+52;CMD_RESET_COUNTERS_RESERVED_U16; b16force_reset_counter;u16counter_index_tbd;;;;;;;;;
+
+201;CMD_INIT_INTERNAL_CONFIG_U16;u16_code_init (0xAA/170);b16_force_init;;;;;;;;;
+202;CMD_INIT_CONFIG_SAS360CON_U16;u16_code_init (0xAA/170);b16_force_init;;;;;;;;;
+203;CMD_INIT_CONFIG_IOT_AZURE_U16;u16_code_init (0xAA/170);b16_force_init;;;;;;;;;
+204;CMD_INIT_LOGGING_REGISTERS_U16;u16_code_init (0xAA/170);b16_force_init;;;;;;;;;
+205;CMD_INIT_NVREG_U16;u16_code_init(0xAA/170);b16_force_init;;;;;;;;;
+
+211;CMD_PROD_PRODUCTION_TEST_MODE_U16;u16_code_prod (0x5A/90);b16_prod_mode_on;;;;;;;;;
+212;CMD_PROD_SET_BOARD_SERIAL_NUMBER_U16;u16_code_prod (0x5A/90);u16_serial_number1; u16_serial_number2; u16_serial_number3;;;;;;;
+213;CMD_PROD_SET_CONTAG_ID_16_BIT_U16;u16_code_prod (0x5A/90);u16_contagID_2LSB;;;;;;;;;
+214;CMD_PROD_SET_CONTAG_TYPE_ID_3ER BYTE_U16;u16_code_prod (0x5A/90);u16_contagID_3er_bytes_1LSB;;;;;;;;;
+
+221;CMD_INTERNAL_MB_RTU_SLAVE_NUMBER_U16;u16_code_depu (0x85/170);u16_slave_number (1-240);;;;;;;;;
+222;CMD_INTERNAL_MB_RTU_SPEED_U16;u16_code_depu (0x85/170);u16speed_codif ( 5-9600 / 7 -19200 / 8-38400 / 10-57600/ 11-11520 / default-9600);;;;;;;;;
+223;CMD_INTERNAL_MB_LIN_SPEED_U16;u16_code_depu (0x85/170);u16speed_codif ( 5-9600 / 7 -19200 / 8-38400 / 10-57600/ 11-11520 / default-9600);;;;;;;;;
+
+231;CMD_DEPU_STOP_WATCHDOG_U16;u16_code_depu (0x85/170);b16_force_depu;;;;;;;;;
+232;CMD_DEPU_FORCE_ERROR_LIN_CRC_U16;u16_code_depu (0x85/170);b16_force_depu;16depu_forced_LIN (1-5);u16_depu_forced_ERROR_index;;;;;;;
+233;CMD_DEPU_FORCE_ERROR_FLASH_CRC_U16;u16_code_depu (0x85/170);b16_force_depu;u16_depu_forced_struct (1-10);;;;;;;;
+234;CMD_DEPU_FORCE_SAS360CON_STATE_U16;u16_code_depu (0x85/170);b16_force_depu;u16_sas360con_state (1-10);;;;;;;;

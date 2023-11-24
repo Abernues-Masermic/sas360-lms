@@ -179,7 +179,7 @@
                 <ControlTemplate TargetType="{x:Type CheckBox}">
                     <Border x:Name="Border_checkbox" BorderBrush="#4c6680" BorderThickness="2" CornerRadius="5" >
                         <Grid>
-                            <Rectangle x:Name="Rectangle_checkbox" Width="20" Height="20" Fill="#9ccdff"/>
+                            <Rectangle x:Name="Rectangle_checkbox" Width="18" Height="18" Fill="#9ccdff"/>
                             <Image x:Name="imageCheckBox" Source="{Binding Tag, RelativeSource={RelativeSource TemplatedParent}}" Cursor="Hand" Width="20" Height="20" Margin="1" />
                             <ContentPresenter VerticalAlignment="Center"/>
                         </Grid>

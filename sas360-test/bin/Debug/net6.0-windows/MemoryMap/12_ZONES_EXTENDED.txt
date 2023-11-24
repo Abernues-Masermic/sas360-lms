@@ -1,0 +1,8 @@
+1600;u16zoneID_2LSB;UInt16;-;1
+1601;u16zoneID_bytes_3_4;UInt16;-;1
+1602;u16zoneID_bytes_5_6;UInt16;-;1
+1603;u16zoneID_bytes_7_8;UInt16;-;1
+1604;u16zone_field_position_X_cm;UInt16;-;1
+1605;u16zone_field_position_Y_cm;Int16;-;1
+1606;f32geoloc_registrada_zone_LAT;Float;-;1
+1608;f32geoloc_registrada_zone_LON;Float;-;1

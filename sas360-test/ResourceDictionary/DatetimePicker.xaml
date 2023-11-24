@@ -1,0 +1,172 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:theme="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
+	                xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit">
+
+
+    <Style x:Key="MetroDateTimePicker" TargetType="{x:Type xctk:DateTimePicker}">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Background" Value="{DynamicResource DateTimePicker.Background.Brush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="Black"/>
+        <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+        <Setter Property="FontFamily" Value="Helvetica LT Std"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+        <Setter Property="Format" Value="Custom"/>
+        <Setter Property="CultureInfo" Value="es-ES"/>
+        <Setter Property="FormatString" Value="MM/dd/yyyy hh:mm"/>
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type xctk:DateTimePicker}">
+                    <Grid>
+                        <Border x:Name="Base"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                            CornerRadius="3"/>
+                        <Grid Margin="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <xctk:ButtonSpinner x:Name="PART_Spinner"
+                                            Grid.Column="0"
+                                            BorderThickness="0"
+                                            IsTabStop="False"
+                                            Background="Transparent"
+                                            AllowSpin="{TemplateBinding AllowSpin}">
+
+                                <xctk:WatermarkTextBox x:Name="PART_TextBox"
+                                                   BorderThickness="0" 
+                                                   Background="Transparent"
+                                                   FontFamily="{TemplateBinding FontFamily}"
+                                                   FontSize="{TemplateBinding FontSize}"
+                                                   FontStretch="{TemplateBinding FontStretch}"
+                                                   FontStyle="{TemplateBinding FontStyle}"
+                                                   FontWeight="{TemplateBinding FontWeight}"
+                                                   Foreground="{TemplateBinding Foreground}"
+                                                   HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                   IsReadOnly="{Binding IsReadOnly, RelativeSource={RelativeSource TemplatedParent}}"
+                                                   MinWidth="20"
+                                                   AcceptsReturn="False"
+                                                   Padding="0,0,10,0"
+                                                   TextAlignment="{TemplateBinding TextAlignment}"
+                                                   TextWrapping="NoWrap" 
+                                                   Text="{Binding Text, RelativeSource={RelativeSource TemplatedParent}}"
+                                                   TabIndex="{TemplateBinding TabIndex}"
+                                                   Watermark="{TemplateBinding Watermark}"
+                                                   WatermarkTemplate="{TemplateBinding WatermarkTemplate}" />
+
+                            </xctk:ButtonSpinner>
+
+                            <ToggleButton x:Name="_calendarToggleButton"
+                                Background="{TemplateBinding Background}"
+                                Grid.Column="1"
+                                IsChecked="{Binding IsOpen, RelativeSource={RelativeSource TemplatedParent}}"
+                                Foreground="{TemplateBinding Foreground}"
+                                IsTabStop="False">
+
+                                <ToggleButton.Style>
+                                    <Style TargetType="{x:Type ToggleButton}">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                                    <Grid SnapsToDevicePixels="True">
+                                                        <theme:ButtonChrome x:Name="ToggleButtonChrome" RenderMouseOver="{TemplateBinding IsMouseOver}" RenderPressed="{TemplateBinding IsPressed}" BorderBrush="{x:Null}" />
+                                                        <Grid>
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition Width="*"/>
+                                                                <ColumnDefinition Width="Auto"/>
+                                                            </Grid.ColumnDefinitions>
+
+                                                            <ContentPresenter 
+                                                                ContentTemplate="{TemplateBinding ContentTemplate}" 
+                                                                Content="{TemplateBinding Content}" 
+                                                                ContentStringFormat="{TemplateBinding ContentStringFormat}" 
+                                                                HorizontalAlignment="Stretch" 
+                                                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                                                VerticalAlignment="Stretch"/>
+
+                                                            <Grid x:Name="arrowGlyph" Grid.Column="1" IsHitTestVisible="False" Margin="5">
+                                                                <Path Data="M0,1C0,1 0,0 0,0 0,0 3,0 3,0 3,0 3,1 3,1 3,1 4,1 4,1 4,1 4,0 4,0 4,0 7,0 7,0 7,0 7,1 7,1 7,1 6,1 6,1 6,1 6,2 6,2 6,2 5,2 5,2 5,2 5,3 5,3 5,3 4,3 4,3 4,3 4,4 4,4 4,4 3,4 3,4 3,4 3,3 3,3 3,3 2,3 2,3 2,3 2,2 2,2 2,2 1,2 1,2 1,2 1,1 1,1 1,1 0,1 0,1z" Fill="White" Height="4" Width="7"/>
+                                                            </Grid>
+                                                        </Grid>
+                                                    </Grid>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+                                    </Style>
+                                </ToggleButton.Style>
+                            </ToggleButton>
+                        </Grid>
+
+                        <Popup x:Name="PART_Popup" 
+                           AllowsTransparency="True"
+                           IsOpen="{Binding IsChecked, ElementName=_calendarToggleButton}"
+                           PopupAnimation="{DynamicResource {x:Static SystemParameters.ComboBoxPopupAnimationKey}}"
+                           StaysOpen="False">
+                            <Border Padding="3"
+                                Background="White"
+                                BorderBrush="Black"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                                <StackPanel>
+
+                                    <Calendar x:Name="Part_Calendar"
+                                              DisplayDate="{Binding Value, RelativeSource={RelativeSource TemplatedParent}}" 
+                                              Background="White" 
+                                              BorderBrush="Black"
+                                              BorderThickness="1,1,2,2"
+                                              FontFamily="Helvetica LT Std"
+                                              FontSize="12"
+                                              SelectedDate="{Binding Value, RelativeSource={RelativeSource TemplatedParent}}"  />
+
+                                    <xctk:TimePicker x:Name="PART_TimeUpDown"
+                                        Background="{DynamicResource  DateTimePicker.Background.Brush}"
+                                        Foreground="White" 
+                                        FontFamily="{Binding FontFamily, RelativeSource={RelativeSource TemplatedParent}}"
+                                        FontSize="{Binding FontSize, RelativeSource={RelativeSource TemplatedParent}}"
+                                        Format="{TemplateBinding TimeFormat}"
+                                        FormatString="{TemplateBinding TimeFormatString}"
+                                        BorderBrush="Black"
+                                        BorderThickness="1,1,2,2"
+                                        Value="{Binding Value, RelativeSource={RelativeSource TemplatedParent}}"
+                                        Minimum="{Binding Minimum, RelativeSource={RelativeSource TemplatedParent}}"
+                                        Maximum="{Binding Maximum, RelativeSource={RelativeSource TemplatedParent}}"
+                                        ClipValueToMinMax="{Binding ClipValueToMinMax, RelativeSource={RelativeSource TemplatedParent}}"
+                                        IsUndoEnabled="{Binding IsUndoEnabled, RelativeSource={RelativeSource TemplatedParent}}"
+                                        AllowSpin="{TemplateBinding TimePickerAllowSpin}"
+                                        ShowButtonSpinner="{TemplateBinding TimePickerShowButtonSpinner}"
+                                        Watermark="{TemplateBinding TimeWatermark}"
+                                        WatermarkTemplate="{TemplateBinding TimeWatermarkTemplate}"
+                                        Visibility="{TemplateBinding TimePickerVisibility}"
+                                        Margin="3 0 3 3"/>
+                                </StackPanel>
+                            </Border>
+                        </Popup>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding IsReadOnly, RelativeSource={RelativeSource Self}}" Value="False" />
+                                <Condition Binding="{Binding AllowTextInput, RelativeSource={RelativeSource Self}}" Value="False" />
+                            </MultiDataTrigger.Conditions>
+                            <Setter Property="IsReadOnly" Value="True" TargetName="PART_TextBox" />
+                        </MultiDataTrigger>
+                        <DataTrigger Binding="{Binding IsReadOnly, RelativeSource={RelativeSource Self}}" Value="True">
+                            <Setter Property="IsReadOnly" Value="True" TargetName="PART_TextBox" />
+                        </DataTrigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:sas360_test"
         mc:Ignorable="d"
         Title="MainWindow" 
-        Height="970" Width="900"
+        Height="1000" Width="1000"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"  
         AllowsTransparency="True"  
@@ -21,7 +21,7 @@
 
                     <DockPanel >
                         <DockPanel DockPanel.Dock="Left" Cursor="SizeAll" >
-                            <Border  Background="Black" CornerRadius="5" BorderBrush="White" BorderThickness="1" Margin="5" Width="180"  HorizontalAlignment="Left"  MouseLeftButtonDown="Title_MouseDown">
+                            <Border  Background="Black" CornerRadius="5" BorderBrush="White" BorderThickness="1" Margin="3" Width="180"  HorizontalAlignment="Left"  MouseLeftButtonDown="Title_MouseDown">
                                 <Label x:Name="Label_standard"   Style="{StaticResource Label_title}" Content="SETTING" />
                             </Border>
                         </DockPanel>
@@ -44,261 +44,487 @@
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Border x:Name="Border_general" DockPanel.Dock="Top" Grid.Column="0" Style="{StaticResource Border_shadow}" Margin="5" >
+                        <Border x:Name="Border_general" DockPanel.Dock="Top" Grid.Column="0" Style="{StaticResource Border_shadow}" Margin="1" >
 
-                            <StackPanel Orientation="Vertical" Margin="2">
+                            <StackPanel Orientation="Vertical" Margin="1">
                                 <Label  Style="{StaticResource Label_subtitle}" Content="GENERAL" VerticalContentAlignment="Center"   HorizontalContentAlignment="Center" Width="170" Padding="3"/>
 
-                                <CheckBox x:Name="Checkbox_simulator_mode" Content="SIMULATOR MODE" Style="{StaticResource Checkbox_setting}" Margin="5" VerticalContentAlignment="Center" />
 
-                                <WrapPanel  Orientation="Horizontal" Margin="2">
-                                    <Label Content="DETECTION AREA"  Style="{StaticResource Label_standard}" Width="150"/>
-                                    <xctk:DecimalUpDown Name="DecimalUpDown_panel_area" Style="{StaticResource DecimalUpDownStyle}" Width="115" />
-                                    <Label Content="METER"  Style="{StaticResource Label_standard}" Width="120"/>
-                                </WrapPanel>
+                                <WrapPanel Orientation="Horizontal">
+                                    
+                                    <WrapPanel Orientation="Vertical">
 
-                                <WrapPanel  Orientation="Horizontal" Margin="2">
-                                    <Label Content="GRID AREA"  Style="{StaticResource Label_standard}" Width="150"/>
-                                    <xctk:DecimalUpDown Name="DecimalUpDown_grid_area" Style="{StaticResource DecimalUpDownStyle}" Width="115" />
-                                    <Label Content="METER"  Style="{StaticResource Label_standard}" Width="120"/>
-                                </WrapPanel>
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="DETECTION AREA"  Style="{StaticResource Label_standard}" Width="110"/>
+                                            <xctk:DecimalUpDown Name="DecimalUpDown_panel_area" Style="{StaticResource DecimalUpDownStyle}" Width="75" />
+                                            <Label Content="M"  Style="{StaticResource Label_standard}" Width="40"/>
+                                        </WrapPanel>
+
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="GRID AREA"  Style="{StaticResource Label_standard}" Width="110"/>
+                                            <xctk:DecimalUpDown Name="DecimalUpDown_grid_area" Style="{StaticResource DecimalUpDownStyle}" Width="75" />
+                                            <Label Content="M"  Style="{StaticResource Label_standard}" Width="40"/>
+                                        </WrapPanel>
+
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="MAX CLOSEST TAGS"  Style="{StaticResource Label_standard}" Width="110"/>
+                                            <xctk:DecimalUpDown Name="DecimalUpDown_max_closest_tags"  Style="{StaticResource DecimalUpDownStyle}" Width="75" />
+                                        </WrapPanel>
+
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="MAX CLOSEST ZONE"  Style="{StaticResource Label_standard}" Width="110"/>
+                                            <xctk:DecimalUpDown Name="DecimalUpDown_max_closest_zone"  Style="{StaticResource DecimalUpDownStyle}" Width="75" />
+                                        </WrapPanel>
+                                    </WrapPanel>
+
+                                    <WrapPanel Orientation="Vertical" Margin="10,0,0,0">
+
+                                        <CheckBox x:Name="Checkbox_depur_mode" Content="DEPUR MODE" Style="{StaticResource Checkbox_setting}" Margin="1" VerticalContentAlignment="Center" />
+                                        <CheckBox x:Name="Checkbox_simulator_mode" Content="SIMULATOR MODE" Style="{StaticResource Checkbox_setting}" Margin="1" VerticalContentAlignment="Center" />
+                                        <CheckBox x:Name="Checkbox_draw_map" Content="DRAW MAP" Style="{StaticResource Checkbox_setting}" Margin="1" VerticalContentAlignment="Center" />
 
 
-                                <WrapPanel  Orientation="Horizontal" Margin="2">
-                                    <Label Content="MAX CLOSEST TAGS"  Style="{StaticResource Label_standard}" Width="150"/>
-                                    <xctk:DecimalUpDown Name="DecimalUpDown_max_closest_tags"  Style="{StaticResource DecimalUpDownStyle}" Width="115" />
-                                </WrapPanel>
 
-                                <WrapPanel  Orientation="Horizontal" Margin="2">
-                                    <Label Content="MAX CLOSEST ZONE"  Style="{StaticResource Label_standard}" Width="150"/>
-                                    <xctk:DecimalUpDown Name="DecimalUpDown_max_closest_zone"  Style="{StaticResource DecimalUpDownStyle}" Width="115" />
-                                </WrapPanel>
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="DATE FORMAT"  Style="{StaticResource Label_standard}" Width="90"/>
+                                            <TextBox x:Name="Textbox_dateformat"  Style="{StaticResource Textbox_setting}" Width="140"/>
+                                        </WrapPanel>
 
-                                <WrapPanel  Orientation="Horizontal" Margin="2">
-                                    <Label Content="DATE FORMAT"  Style="{StaticResource Label_standard}" Width="150"/>
-                                    <TextBox x:Name="Textbox_dateformat"  Style="{StaticResource Textbox_setting}" Width="160"/>
-                                </WrapPanel>
-
-                                <WrapPanel  Orientation="Horizontal" Margin="2">
-                                    <Label Content="PROVIDER"  Style="{StaticResource Label_standard}" Width="150"/>
-                                    <ComboBox x:Name="Combobox_provider" Style="{StaticResource ResourceKey=Combobox_style}" HorizontalContentAlignment="Center" Width="115" />
-
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="PROVIDER"  Style="{StaticResource Label_standard}" Width="90"/>
+                                            <ComboBox x:Name="Combobox_provider" Style="{StaticResource ResourceKey=Combobox_style}" HorizontalContentAlignment="Center" Width="140" />
+                                        </WrapPanel>
+                                    </WrapPanel>
                                 </WrapPanel>
 
                             </StackPanel>
                         </Border>
 
-                        <Border x:Name="Border_comm" DockPanel.Dock="Top" Grid.Column="1" Style="{StaticResource Border_shadow}" Margin="5" >
+                        <Border x:Name="Border_comm" DockPanel.Dock="Top" Grid.Column="1" Style="{StaticResource Border_shadow}" Margin="1" >
 
-                            <StackPanel Orientation="Vertical" Margin="2">
+                            <StackPanel Orientation="Vertical" Margin="1">
 
-                                <Label  Style="{StaticResource Label_subtitle}" Content="COMMUNICATION" VerticalContentAlignment="Center"   HorizontalContentAlignment="Center" Width="170" Padding="3"/>
+                                <WrapPanel Orientation="Horizontal">
+                                    <WrapPanel Orientation="Vertical">
+                                        <Label Style="{StaticResource Label_subtitle}" Content="COMMUNICATION" VerticalContentAlignment="Center"   HorizontalContentAlignment="Center" Width="170" Padding="3"/>
 
+                                        <WrapPanel  Orientation="Horizontal" Margin="1, 5,1,1">
+                                            <Label Content="UNIT ID"  Style="{StaticResource Label_standard}" Width="90"/>
+                                            <xctk:DecimalUpDown Name="DecimalUpDown_UnitId"   Style="{StaticResource DecimalUpDownStyle}" Width="90"/>
+                                        </WrapPanel>
 
-                                <WrapPanel  Orientation="Horizontal" Margin="1,5,1,1">
-                                    <Label Content="UNIT ID"  Style="{StaticResource Label_standard}" Width="150"/>
-                                    <xctk:DecimalUpDown Name="DecimalUpDown_UnitId"   Style="{StaticResource DecimalUpDownStyle}" Width="115"/>
-                                </WrapPanel>
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="COM PORT"  Style="{StaticResource Label_standard}" Width="90"/>
+                                            <ComboBox x:Name="Combobox_comm_port" Style="{StaticResource ResourceKey=Combobox_style}" HorizontalContentAlignment="Center" Width="90" />
 
-                                <WrapPanel  Orientation="Horizontal" Margin="1,5,1,1">
-                                    <Label Content="COM PORT"  Style="{StaticResource Label_standard}" Width="150"/>
-                                    <ComboBox x:Name="Combobox_comm_port" Style="{StaticResource ResourceKey=Combobox_style}" HorizontalContentAlignment="Center" Width="115" />
+                                            <Button x:Name="Button_refresh_comm" Style="{StaticResource Button_rounded}"  Height="25" Width="25" Margin="10,0,0,0" Click="Button_refresh_comm_Click">
+                                                <Image Height="22" Width="22" Source="/Images/actualizar.png"/>
+                                            </Button>
+                                        </WrapPanel>
 
-                                    <Button x:Name="Button_refresh_comm" Style="{StaticResource Button_rounded}"  Height="25" Width="25" Margin="10,0,0,0" Click="Button_refresh_comm_Click">
-                                        <Image Height="22" Width="22" Source="/Images/actualizar.png"/>
-                                    </Button>
-                                </WrapPanel>
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="BAUD RATE"  Style="{StaticResource Label_standard}" Width="90"/>
+                                            <ComboBox x:Name="Combobox_baud_rate" Style="{StaticResource ResourceKey=Combobox_style}" HorizontalContentAlignment="Center" Width="90" />
+                                        </WrapPanel>
+                                    </WrapPanel>
 
-                                <WrapPanel  Orientation="Horizontal" Margin="1,5,1,1">
-                                    <Label Content="BAUD RATE"  Style="{StaticResource Label_standard}" Width="150"/>
-                                    <ComboBox x:Name="Combobox_baud_rate" Style="{StaticResource ResourceKey=Combobox_style}" HorizontalContentAlignment="Center" Width="115" />
-                                </WrapPanel>
+                                    <WrapPanel Orientation="Vertical" Margin="20,5,0,0">
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="CONN TIMEOUT"  Style="{StaticResource Label_standard}" Width="130"/>
+                                            <xctk:DecimalUpDown Name="DecimalUpDown_conn_timeout" Style="{StaticResource DecimalUpDownStyle}" Width="70"/>
+                                            <Label Content="ms"  Style="{StaticResource Label_standard}"/>
+                                        </WrapPanel>
 
-                                <WrapPanel  Orientation="Horizontal" Margin="1,5,1,1">
-                                    <Label Content="CONN TIMEOUT"  Style="{StaticResource Label_standard}" Width="150"/>
-                                    <xctk:DecimalUpDown Name="DecimalUpDown_conn_timeout"   Style="{StaticResource DecimalUpDownStyle}" Width="115"/>
-                                    <Label Content="ms"  Style="{StaticResource Label_standard}"/>
-                                </WrapPanel>
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="READ MEM INTERVAL"  Style="{StaticResource Label_standard}" Width="130"/>
+                                            <xctk:DecimalUpDown Name="DecimalUpDown_read_memory_interval" Style="{StaticResource DecimalUpDownStyle}" Width="70"/>
+                                            <Label Content="ms"  Style="{StaticResource Label_standard}"/>
+                                        </WrapPanel>
 
-                                <WrapPanel  Orientation="Horizontal" Margin="1,5,1,5">
-                                    <Label Content="READ MEMORY INTERVAL"  Style="{StaticResource Label_standard}" Width="150"/>
-                                    <xctk:DecimalUpDown Name="DecimalUpDown_read_memory_interval"   Style="{StaticResource DecimalUpDownStyle}" Width="115"/>
-                                    <Label Content="ms"  Style="{StaticResource Label_standard}"/>
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="READ LOG INTERVAL"  Style="{StaticResource Label_standard}" Width="130"/>
+                                            <xctk:DecimalUpDown Name="DecimalUpDown_read_log_interval" Style="{StaticResource DecimalUpDownStyle}" Width="70"/>
+                                            <Label Content="ms"  Style="{StaticResource Label_standard}"/>
+                                        </WrapPanel>
+
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="SEND WRITE INTERVAL"  Style="{StaticResource Label_standard}" Width="130"/>
+                                            <xctk:DecimalUpDown Name="DecimalUpDown_wait_send_write_interval"   Style="{StaticResource DecimalUpDownStyle}" Width="70"/>
+                                            <Label Content="ms"  Style="{StaticResource Label_standard}"/>
+                                        </WrapPanel>
+
+                                        <WrapPanel  Orientation="Horizontal" Margin="1">
+                                            <Label Content="COMM TIMEOUT"  Style="{StaticResource Label_standard}" Width="130"/>
+                                            <xctk:DecimalUpDown Name="DecimalUpDown_comm_timeout_interval"  Style="{StaticResource DecimalUpDownStyle}" Width="70"/>
+                                            <Label Content="ms"  Style="{StaticResource Label_standard}"/>
+                                        </WrapPanel>
+                                    </WrapPanel>
                                 </WrapPanel>
                             </StackPanel>
                         </Border>
                     </Grid>
 
-                    <Border x:Name="Border_modbus_read"  Style="{StaticResource Border_shadow}" Margin="5" >
-                        <WrapPanel  Margin="2" Orientation="Vertical">
+                    <Border x:Name="Border_modbus_read"  Style="{StaticResource Border_shadow}" Margin="1" >
+                        <WrapPanel  Margin="1" Orientation="Vertical">
                             <Label  Style="{StaticResource Label_subtitle}" Content="MODBUS READ" VerticalContentAlignment="Center"   HorizontalContentAlignment="Center" Width="170" Padding="3"/>
 
-                            <WrapPanel Orientation="Vertical" Margin="5">
+                            <WrapPanel Orientation="Horizontal">
 
-                                <WrapPanel Orientation="Horizontal" Margin="2">
-                                    <CheckBox x:Name="Checkbox_modbus_read_internal_config" Style="{StaticResource Checkbox_setting}" Width="170" Margin="2" >
-                                        <Label Style="{StaticResource Label_standard}">INTERNAL CONFIG</Label>
-                                    </CheckBox>
-                                    <CheckBox x:Name="Checkbox_modbus_read_config_sas360con" Style="{StaticResource Checkbox_setting}" Width="170" Margin="2" >
-                                        <Label Style="{StaticResource Label_standard}">CONFIG SAS360CON</Label>
-                                    </CheckBox>
-                                    <CheckBox x:Name="Checkbox_modbus_read_config_iot" Style="{StaticResource Checkbox_setting}" Width="170" Margin="2" >
-                                        <Label Style="{StaticResource Label_standard}">CONFIG IOT</Label>
-                                    </CheckBox>
+                                <WrapPanel Orientation="Vertical" Margin="1">
+
+                                    <WrapPanel Orientation="Horizontal" Margin="134,2,0,0">
+                                        <Label  Style="{StaticResource Label_subtitle}" Background="SlateGray" Content="INI" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Width="75" Padding="1" Margin="4,0,0,0"/>
+                                        <Label  Style="{StaticResource Label_subtitle}" Background="SlateGray" Content="SIZE" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Width="75" Padding="1" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+                                    
+                                    <WrapPanel Orientation="Horizontal" Margin="2,2,0,0">
+                                        <CheckBox x:Name="Checkbox_modbus_read_sas360con_internal_cfg" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="130" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">SAS360CON INT CFG</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_internal_cfg_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_internal_cfg_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_sas360con_cfg" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left"  Width="130" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">SAS360CON CFG</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_cfg_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_cfg_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+                                    
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_iot_cfg" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="130" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">IOT CFG</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_iot_cfg_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_iot_cfg_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+                                    
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_sas360con_image" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="130" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">SAS360CON IMAGE</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_image_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_image_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+                                    
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_iot_image" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="130" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">IOT IMAGE</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_iot_image_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_iot_image_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_sas360con_maintennance" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="130" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">SAS360CON MAINT</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_maintennance_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_maintennance_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_uwb_internal_cfg" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="130" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">UWB INTERNAL CFG</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_uwb_internal_cfg_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_uwb_internal_cfg_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_uwb_image" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="130" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">UWB IMAGE</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_uwb_image_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_uwb_image_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
                                 </WrapPanel>
 
-                                <WrapPanel Orientation="Horizontal" Margin="2">
-                                    <CheckBox x:Name="Checkbox_modbus_read_image_sas360con" Style="{StaticResource Checkbox_setting}" Width="170" Margin="2" >
-                                        <Label Style="{StaticResource Label_standard}">IMAGE SAS360CON</Label>
-                                    </CheckBox>
-                                    <CheckBox x:Name="Checkbox_modbus_read_image_iot" Style="{StaticResource Checkbox_setting}" Width="170" Margin="2" >
-                                        <Label Style="{StaticResource Label_standard}">IMAGE IOT</Label>
-                                    </CheckBox>
-                                    <CheckBox x:Name="Checkbox_modbus_read_console_closest_tags_base" Style="{StaticResource Checkbox_setting}" Width="170" Margin="2" >
-                                        <Label Style="{StaticResource Label_standard}">CON CLOSEST TAG BASE</Label>
-                                    </CheckBox>
+                                <WrapPanel Orientation="Vertical" Margin="15,2,2,2">
+
+                                    <WrapPanel Orientation="Horizontal" Margin="173,2,0,0">
+                                        <Label  Style="{StaticResource Label_subtitle}" Background="SlateGray" Content="INI" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Width="75" Padding="1" Margin="4,0,0,0"/>
+                                        <Label  Style="{StaticResource Label_subtitle}" Background="SlateGray" Content="SIZE" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Width="75" Padding="1" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_console_closest_tags_base" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="170" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">CON CLOSEST TAG BASE</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_console_closest_tags_base_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_console_closest_tags_base_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+                                    
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_console_closest_tags_extended" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="170" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">CON CLOSEST TAG EXTEND</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_console_closest_tags_extended_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_console_closest_tags_extended_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+                                    
+                                    
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_console_closest_zone_base" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="170" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">CON CLOSEST ZONE BASE</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_console_closest_zone_base_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_console_closest_zone_base_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+                                    
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_console_closest_zone_extended" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="170" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">CON CLOSEST ZONE EXTEND</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_console_closest_zone_extended_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_console_closest_zone_extended_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_uwb_closest_tags_base" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="170" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">UWB CLOSEST TAG BASE</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_uwb_closest_tags_base_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_uwb_closest_tags_base_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_uwb_closest_tags_extended" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="170" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">UWB CLOSEST TAG EXTEND</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_uwb_closest_tags_extended_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_uwb_closest_tags_extended_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_uwb_closest_zone_base" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="170" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">UWB CLOSEST ZONE BASE</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_uwb_closest_zone_base_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_uwb_closest_zone_base_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_uwb_closest_zone_extended" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="170" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">UWB CLOSEST ZONE EXTEND</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_uwb_closest_zone_extended_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_uwb_closest_zone_extended_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+
                                 </WrapPanel>
 
-                                <WrapPanel Orientation="Horizontal" Margin="2">
-                                    <CheckBox x:Name="Checkbox_modbus_read_console_closest_tags_extended" Style="{StaticResource Checkbox_setting}" Width="170" Margin="2" >
-                                        <Label Style="{StaticResource Label_standard}">CON CLOSEST TAG EXTEND</Label>
-                                    </CheckBox>
-                                    <CheckBox x:Name="Checkbox_modbus_read_uwb_closest_tags_base" Style="{StaticResource Checkbox_setting}" Width="170" Margin="2" >
-                                        <Label Style="{StaticResource Label_standard}">UWB CLOSEST TAG BASE</Label>
-                                    </CheckBox>
-                                    <CheckBox x:Name="Checkbox_modbus_read_uwb_closest_tags_extended" Style="{StaticResource Checkbox_setting}" Width="170" Margin="2" >
-                                        <Label Style="{StaticResource Label_standard}">UWB CLOSEST TAG EXTEND</Label>
-                                    </CheckBox>
-                                </WrapPanel>
-                                <WrapPanel Orientation="Horizontal" Margin="2">
-                                    <CheckBox x:Name="Checkbox_modbus_read_console_closest_zone_base" Style="{StaticResource Checkbox_setting}" Width="170" Margin="2" >
-                                        <Label Style="{StaticResource Label_standard}">CON CLOSEST ZONE BASE</Label>
-                                    </CheckBox>
-                                    <CheckBox x:Name="Checkbox_modbus_read_console_closest_zone_extended" Style="{StaticResource Checkbox_setting}" Width="170" Margin="2" >
-                                        <Label Style="{StaticResource Label_standard}">CON CLOSEST ZONE EXTEND</Label>
-                                    </CheckBox>
-                                    <CheckBox x:Name="Checkbox_modbus_read_nvreg" Style="{StaticResource Checkbox_setting}" Width="170" Margin="2" >
-                                        <Label Style="{StaticResource Label_standard}">NVREG</Label>
-                                    </CheckBox>
+                                <WrapPanel Orientation="Vertical" Margin="15,2,2,2">
+                                    
+                                    <WrapPanel Orientation="Horizontal" Margin="153,2,0,0">
+                                        <Label  Style="{StaticResource Label_subtitle}" Background="SlateGray" Content="INI" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Width="75" Padding="1" Margin="4,0,0,0"/>
+                                        <Label  Style="{StaticResource Label_subtitle}" Background="SlateGray" Content="SIZE" VerticalContentAlignment="Center"  HorizontalContentAlignment="Center" Width="75" Padding="1" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_sas360con_nvreg" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="150" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">SAS360CON NVREG</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_nvreg_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_nvreg_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_sas360con_command" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="150" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">SAS360CON COMMAND</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_command_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_command_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_sas360con_event_log" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="150" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">SAS360CON EVENT LOG</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_event_log_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_event_log_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
+
+                                    <WrapPanel Orientation="Horizontal" Margin="1">
+                                        <CheckBox x:Name="Checkbox_modbus_read_sas360con_hist_log" Style="{StaticResource Checkbox_setting}" HorizontalAlignment="Left" Width="150" Margin="1" >
+                                            <Label Style="{StaticResource Label_standard}">SAS360CON HIST LOG</Label>
+                                        </CheckBox>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_hist_log_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                        <xctk:DecimalUpDown Name="DecimalUpDown_read_sas360con_hist_log_size"  Style="{StaticResource DecimalUpDownStyle}" Width="75" Margin="4,0,0,0"/>
+                                    </WrapPanel>
                                 </WrapPanel>
                             </WrapPanel>
                         </WrapPanel>
                     </Border>
 
-                    <Border x:Name="Border_modbus_write" DockPanel.Dock="Top" Style="{StaticResource Border_shadow}" Margin="5" >
-                        <WrapPanel  Margin="2" Orientation="Vertical" >
+                    <Border x:Name="Border_modbus_write" DockPanel.Dock="Top" Style="{StaticResource Border_shadow}" Margin="1" >
+                        <WrapPanel Orientation="Horizontal" Margin="1">
+
                             <Label  Style="{StaticResource Label_subtitle}" Content="MODBUS WRITE" VerticalContentAlignment="Center"   HorizontalContentAlignment="Center" Width="170" Padding="3"/>
 
-                            <WrapPanel Orientation="Horizontal" Margin="5">
-                                <WrapPanel  Orientation="Horizontal" Margin="1,5,1,1">
-                                    <Label Content="CODE INIT"  Style="{StaticResource Label_standard}" Width="100"/>
-                                    <xctk:DecimalUpDown Name="DecimalUpDown_code_init"   Style="{StaticResource DecimalUpDownStyle}" Width="115"/>
-                                </WrapPanel>
+                            <WrapPanel  Orientation="Horizontal" Margin="20,2">
+                                <Label Content="CODE INIT"  Style="{StaticResource Label_standard}" Width="75"/>
+                                <xctk:DecimalUpDown Name="DecimalUpDown_code_ini"   Style="{StaticResource DecimalUpDownStyle}" Width="115"/>
+                            </WrapPanel>
 
-                                <WrapPanel  Orientation="Horizontal" Margin="20,5,1,1">
-                                    <Label Content="CODE PROD"  Style="{StaticResource Label_standard}" Width="100"/>
-                                    <xctk:DecimalUpDown Name="DecimalUpDown_code_prod"   Style="{StaticResource DecimalUpDownStyle}" Width="115"/>
-                                </WrapPanel>
+                            <WrapPanel  Orientation="Horizontal" Margin="20,2">
+                                <Label Content="CODE PROD"  Style="{StaticResource Label_standard}" Width="75"/>
+                                <xctk:DecimalUpDown Name="DecimalUpDown_code_prod"   Style="{StaticResource DecimalUpDownStyle}" Width="115"/>
+                            </WrapPanel>
 
-                                <WrapPanel  Orientation="Horizontal" Margin="20,5,1,1">
-                                    <Label Content="CODE DEPU"  Style="{StaticResource Label_standard}" Width="100"/>
-                                    <xctk:DecimalUpDown Name="DecimalUpDown_code_depu"   Style="{StaticResource DecimalUpDownStyle}" Width="115"/>
-                                </WrapPanel>
+                            <WrapPanel  Orientation="Horizontal" Margin="20,2">
+                                <Label Content="CODE DEPU"  Style="{StaticResource Label_standard}" Width="75"/>
+                                <xctk:DecimalUpDown Name="DecimalUpDown_code_depu"   Style="{StaticResource DecimalUpDownStyle}" Width="115"/>
                             </WrapPanel>
                         </WrapPanel>
                     </Border>
 
 
-                    <Border x:Name="Border_paths" DockPanel.Dock="Top" Style="{StaticResource Border_shadow}" Margin="5" >
 
-                        <StackPanel Orientation="Vertical" Margin="2">
+                    <Border x:Name="Border_paths" DockPanel.Dock="Top" Style="{StaticResource Border_shadow}" Margin="1" >
+
+                        <StackPanel Orientation="Vertical" Margin="1">
                             <Label  Style="{StaticResource Label_subtitle}" Content="PATHS" VerticalContentAlignment="Center"   HorizontalContentAlignment="Center" Width="170" Padding="3"/>
 
-                            <StackPanel Orientation="Horizontal" Margin="1,5,1,1">
-                                <Label Content="INTERNAL CONFIG"  Style="{StaticResource Label_standard}" Width="150"/>
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="SAS360CON INTERNAL CFG"  Style="{StaticResource Label_standard}" Width="150"/>
                                 <WrapPanel>
-                                    <TextBox x:Name="Textbox_internal_config" Style="{StaticResource Textbox_setting}"  Width="500"/>
-                                    <Button x:Name="Button_internal_config" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                    <TextBox x:Name="Textbox_sas360con_internal_cfg" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_sas360con_internal_cfg" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
                                         <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
                                     </Button>
                                 </WrapPanel>
                             </StackPanel>
 
-                            <StackPanel Orientation="Horizontal" Margin="1,5,1,1">
-                                <Label Content="CONFIG SAS360CON"  Style="{StaticResource Label_standard}" Width="150"/>
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="SAS360CON CFG"  Style="{StaticResource Label_standard}" Width="150"/>
                                 <WrapPanel>
-                                    <TextBox x:Name="Textbox_config_sas360con" Style="{StaticResource Textbox_setting}"  Width="500"/>
-                                    <Button x:Name="Button_config_sas360con" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                    <TextBox x:Name="Textbox_sas360con_cfg" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_sas360con_cfg" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
                                         <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
                                     </Button>
                                 </WrapPanel>
                             </StackPanel>
 
-                            <StackPanel Orientation="Horizontal" Margin="1,5,1,1">
-                                <Label Content="CONFIG IOT"  Style="{StaticResource Label_standard}" Width="150"/>
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="IOT CFG"  Style="{StaticResource Label_standard}" Width="150"/>
                                 <WrapPanel>
-                                    <TextBox x:Name="Textbox_config_iot" Style="{StaticResource Textbox_setting}"  Width="500"/>
-                                    <Button x:Name="Button_config_iot" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                    <TextBox x:Name="Textbox_iot_cfg" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_iot_cfg" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
                                         <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
                                     </Button>
                                 </WrapPanel>
                             </StackPanel>
 
 
-                            <StackPanel Orientation="Horizontal" Margin="1,5,1,1">
-                                <Label Content="IMAGE SAS360CON"  Style="{StaticResource Label_standard}" Width="150"/>
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="SAS360CON IMAGE"  Style="{StaticResource Label_standard}" Width="150"/>
                                 <WrapPanel>
-                                    <TextBox x:Name="Textbox_image_sas360con" Style="{StaticResource Textbox_setting}"  Width="500"/>
-                                    <Button x:Name="Button_image_sas360con" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                    <TextBox x:Name="Textbox_sas360con_image" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_sas360con_image" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
                                         <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
                                     </Button>
                                 </WrapPanel>
                             </StackPanel>
 
-                            <StackPanel Orientation="Horizontal" Margin="1,5,1,1">
-                                <Label Content="IMAGE IOT"  Style="{StaticResource Label_standard}" Width="150"/>
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="IOT IMAGE"  Style="{StaticResource Label_standard}" Width="150"/>
                                 <WrapPanel>
-                                    <TextBox x:Name="Textbox_image_iot" Style="{StaticResource Textbox_setting}"  Width="500"/>
-                                    <Button x:Name="Button_image_iot" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                    <TextBox x:Name="Textbox_iot_image" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_iot_image" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                        <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
+                                    </Button>
+                                </WrapPanel>
+                            </StackPanel>
+                            
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="SAS360CON MAINT"  Style="{StaticResource Label_standard}" Width="150"/>
+                                <WrapPanel>
+                                    <TextBox x:Name="Textbox_sas360con_maintennance" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_sas360con_maintennance" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
                                         <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
                                     </Button>
                                 </WrapPanel>
                             </StackPanel>
 
-                            <StackPanel Orientation="Horizontal" Margin="1,5,1,1">
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="UWB INTERNAL CFG"  Style="{StaticResource Label_standard}" Width="150"/>
+                                <WrapPanel>
+                                    <TextBox x:Name="Textbox_uwb_internal_cfg" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_uwb_internal_cfg" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                        <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
+                                    </Button>
+                                </WrapPanel>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="UWB IMAGE"  Style="{StaticResource Label_standard}" Width="150"/>
+                                <WrapPanel>
+                                    <TextBox x:Name="Textbox_uwb_image" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_uwb_image" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                        <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
+                                    </Button>
+                                </WrapPanel>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="1">
                                 <Label Content="CON CLOSEST TAGS BASE"  Style="{StaticResource Label_standard}" Width="150"/>
                                 <WrapPanel>
-                                    <TextBox x:Name="Textbox_console_closest_tags_base" Style="{StaticResource Textbox_setting}"  Width="500"/>
+                                    <TextBox x:Name="Textbox_console_closest_tags_base" Style="{StaticResource Textbox_setting}"  Width="750"/>
                                     <Button x:Name="Button_console_closest_tags_base" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
                                         <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
                                     </Button>
                                 </WrapPanel>
                             </StackPanel>
 
-                            <StackPanel Orientation="Horizontal" Margin="1,5,1,1">
+                            <StackPanel Orientation="Horizontal" Margin="1">
                                 <Label Content="CON CLOSEST TAGS EXT"  Style="{StaticResource Label_standard}" Width="150"/>
                                 <WrapPanel>
-                                    <TextBox x:Name="Textbox_console_closest_tags_extended" Style="{StaticResource Textbox_setting}"  Width="500"/>
+                                    <TextBox x:Name="Textbox_console_closest_tags_extended" Style="{StaticResource Textbox_setting}"  Width="750"/>
                                     <Button x:Name="Button_console_closest_tags_extended" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
                                         <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
                                     </Button>
                                 </WrapPanel>
                             </StackPanel>
 
-                            <StackPanel Orientation="Horizontal" Margin="1,5,1,1">
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="CON CLOSEST ZONE BASE"  Style="{StaticResource Label_standard}" Width="150"/>
+                                <WrapPanel>
+                                    <TextBox x:Name="Textbox_console_closest_zone_base" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_console_closest_zone_base" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                        <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
+                                    </Button>
+                                </WrapPanel>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="CON CLOSEST ZONE EXT"  Style="{StaticResource Label_standard}" Width="150"/>
+                                <WrapPanel>
+                                    <TextBox x:Name="Textbox_console_closest_zone_extended" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_console_closest_zone_extended" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                        <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
+                                    </Button>
+                                </WrapPanel>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="1">
                                 <Label Content="UWB CLOSEST TAGS BASE"  Style="{StaticResource Label_standard}" Width="150"/>
                                 <WrapPanel>
-                                    <TextBox x:Name="Textbox_uwb_closest_tags_base" Style="{StaticResource Textbox_setting}"  Width="500"/>
+                                    <TextBox x:Name="Textbox_uwb_closest_tags_base" Style="{StaticResource Textbox_setting}"  Width="750"/>
                                     <Button x:Name="Button_uwb_closest_tags_base" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
                                         <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
                                     </Button>
                                 </WrapPanel>
                             </StackPanel>
 
-                            <StackPanel Orientation="Horizontal" Margin="1,5,1,1">
+                            <StackPanel Orientation="Horizontal" Margin="1">
                                 <Label Content="UWB CLOSEST TAGS EXT"  Style="{StaticResource Label_standard}" Width="150"/>
                                 <WrapPanel>
-                                    <TextBox x:Name="Textbox_uwb_closest_tags_extended" Style="{StaticResource Textbox_setting}"  Width="500"/>
+                                    <TextBox x:Name="Textbox_uwb_closest_tags_extended" Style="{StaticResource Textbox_setting}"  Width="750"/>
                                     <Button x:Name="Button_uwb_closest_tags_extended" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
                                         <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
                                     </Button>
@@ -306,42 +532,43 @@
                             </StackPanel>
 
 
-
-                            <StackPanel Orientation="Horizontal" Margin="1,5,1,1">
-                                <Label Content="CON CLOSEST ZONE BASE"  Style="{StaticResource Label_standard}" Width="150"/>
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="UWB CLOSEST ZONE BASE"  Style="{StaticResource Label_standard}" Width="150"/>
                                 <WrapPanel>
-                                    <TextBox x:Name="Textbox_console_closest_zone_base" Style="{StaticResource Textbox_setting}"  Width="500"/>
-                                    <Button x:Name="Button_console_closest_zone_base" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                    <TextBox x:Name="Textbox_uwb_closest_zone_base" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_uwb_closest_zone_base" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                        <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
+                                    </Button>
+                                </WrapPanel>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="UWB CLOSEST ZONE EXT"  Style="{StaticResource Label_standard}" Width="150"/>
+                                <WrapPanel>
+                                    <TextBox x:Name="Textbox_uwb_closest_zone_extended" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_uwb_closest_zone_extended" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                        <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
+                                    </Button>
+                                </WrapPanel>
+                            </StackPanel>
+
+
+
+                            <StackPanel Orientation="Horizontal" Margin="1">
+                                <Label Content="SAS360 NVREG"  Style="{StaticResource Label_standard}" Width="150"/>
+                                <WrapPanel>
+                                    <TextBox x:Name="Textbox_sas360con_nvreg" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_sas360con_nvreg" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
                                         <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
                                     </Button>
                                 </WrapPanel>
                             </StackPanel>
 
                             <StackPanel Orientation="Horizontal" Margin="1,5,1,1">
-                                <Label Content="CON CLOSEST ZONE EXT"  Style="{StaticResource Label_standard}" Width="150"/>
+                                <Label Content="SAS360 COMMAND"  Style="{StaticResource Label_standard}" Width="150"/>
                                 <WrapPanel>
-                                    <TextBox x:Name="Textbox_console_closest_zone_extended" Style="{StaticResource Textbox_setting}"  Width="500"/>
-                                    <Button x:Name="Button_console_closest_zone_extended" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
-                                        <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
-                                    </Button>
-                                </WrapPanel>
-                            </StackPanel>
-
-                            <StackPanel Orientation="Horizontal" Margin="1,5,1,1">
-                                <Label Content="NVREG"  Style="{StaticResource Label_standard}" Width="150"/>
-                                <WrapPanel>
-                                    <TextBox x:Name="Textbox_nvreg" Style="{StaticResource Textbox_setting}"  Width="500"/>
-                                    <Button x:Name="Button_nvreg" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
-                                        <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
-                                    </Button>
-                                </WrapPanel>
-                            </StackPanel>
-
-                            <StackPanel Orientation="Horizontal" Margin="1,10,1,1">
-                                <Label Content="COMMANDS"  Style="{StaticResource Label_standard}" Width="150"/>
-                                <WrapPanel>
-                                    <TextBox x:Name="Textbox_commands" Style="{StaticResource Textbox_setting}"  Width="500"/>
-                                    <Button x:Name="Button_commands" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
+                                    <TextBox x:Name="Textbox_sas360con_commands" Style="{StaticResource Textbox_setting}"  Width="750"/>
+                                    <Button x:Name="Button_sas360con_commands" Style="{StaticResource  Button_rounded}"  Height="26" Width="26" Margin="5,0,0,0" Click="Button_path_click">
                                         <Image Source="/Images/visualizar.png"  Width="23" Height="23" />
                                     </Button>
                                 </WrapPanel>

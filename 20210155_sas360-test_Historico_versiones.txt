@@ -17,6 +17,21 @@ Visual Studio 2022 		.NET 6.0
 
 -------------------------
 
+ver 2.5.0 - 15/09/2023
+
+Incidence: EventLog read, Request integrity flags
+
+Proyects / classes: MainWindow.xaml
+Detail: Wait until received data managed to request next modbus register group
+Status: Verified
+
+Executed: Ander Bernues 15/09/2023
+Validated: Ander Bernues 15/09/2023
+
+-------------------------
+
+-------------------------
+
 ver 2.0.0 - 24/03/2023
 
 Incidence: Data simulation and show received data into the window

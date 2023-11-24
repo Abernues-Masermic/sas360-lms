@@ -12,14 +12,18 @@
                 <ResourceDictionary Source="ResourceDictionary/Button.xaml"/>
                 <ResourceDictionary Source="ResourceDictionary/Checkbox.xaml"/>
                 <ResourceDictionary Source="ResourceDictionary/Combobox.xaml"/>
+                <ResourceDictionary Source="ResourceDictionary/DatetimePicker.xaml"/>
                 <ResourceDictionary Source="ResourceDictionary/DecimalUpDown.xaml"/>
                 <ResourceDictionary Source="ResourceDictionary/Expander.xaml"/>
                 <ResourceDictionary Source="ResourceDictionary/Gridview.xaml"/>
                 <ResourceDictionary Source="ResourceDictionary/Label.xaml"/>
                 <ResourceDictionary Source="ResourceDictionary/Listview.xaml"/>
+                <ResourceDictionary Source="ResourceDictionary/ProgressBar.xaml"/>
+                <ResourceDictionary Source="ResourceDictionary/RadioButton.xaml"/>
                 <ResourceDictionary Source="ResourceDictionary/Tabcontrol.xaml"/>
                 <ResourceDictionary Source="ResourceDictionary/Textblock.xaml"/>
                 <ResourceDictionary Source="ResourceDictionary/Textbox.xaml"/>
+                <ResourceDictionary Source="ResourceDictionary/ToggleButton.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

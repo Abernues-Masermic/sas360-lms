@@ -130,4 +130,18 @@
         <GradientStop Color="Lavender" Offset="1.0" />
     </LinearGradientBrush>
 
+
+    <LinearGradientBrush x:Key="DateTimePicker.Background.Brush" StartPoint="0,0" EndPoint="1,1">
+        <GradientStop Color="#144b5f" Offset="0.0" />
+        <GradientStop Color="#2d5f71" Offset="0.5" />
+        <GradientStop Color="#467789" Offset="1" />
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="ProgressBar.Green.Gradient" StartPoint="0,0.5" EndPoint="1,0.5">
+        <GradientStop Color="#c03d7f18" Offset="0" />
+        <GradientStop Color="#ca63e01f" Offset="0.15" />
+        <GradientStop Color="#ca63e01f" Offset="0.85" />
+        <GradientStop Color="#c03d7f18" Offset="1" />
+    </LinearGradientBrush>
+
 </ResourceDictionary>

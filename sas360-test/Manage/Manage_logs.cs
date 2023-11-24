@@ -16,14 +16,16 @@ namespace sas360_test
         {
             try
             {
-                String path = AppDomain.CurrentDomain.BaseDirectory;
-                path += @"\" + Constants.Log_dir + @"\LogProgram.txt";
-
-                lock (SyncObj)
+                if (Globals.GetTheInstance().Depur_mode == BIT_STATE.ON)
                 {
-                    using StreamWriter writer = new(path, true);
-                    writer.WriteLine(DateTime.Now + "\t" + valor);
-                    writer.Close();
+                    string path = $"{AppDomain.CurrentDomain.BaseDirectory}\\{Constants.Log_dir}\\LogProgram.txt";
+
+                    lock (SyncObj)
+                    {
+                        using StreamWriter writer = new(path, true);
+                        writer.WriteLine($"{DateTime.Now:dd/MM/yyyy HH:mm:ss.fff}\t{valor}");
+                        writer.Close();
+                    }
                 }
             }
             catch { }
@@ -46,5 +48,44 @@ namespace sas360_test
             catch { }
         }
 
+
+        public static void SaveModbusValue(string valor)
+        {
+            try
+            {
+                if (Globals.GetTheInstance().Depur_mode == BIT_STATE.ON)
+                {
+                    string path = $"{AppDomain.CurrentDomain.BaseDirectory}\\{Constants.Log_dir}\\LogModbus.txt";
+
+                    lock (SyncObj)
+                    {
+                        using StreamWriter writer = new(path, true);
+                        writer.WriteLine($"{DateTime.Now:dd/MM/yyyy HH:mm:ss.fff}\t{valor}");
+                        writer.Close();
+                    }
+                }
+            }
+            catch { }
+        }
+
+
+        public static void SaveDataValue(string valor)
+        {
+            try
+            {
+                if (Globals.GetTheInstance().Depur_mode == BIT_STATE.ON)
+                {
+                    string path = $"{AppDomain.CurrentDomain.BaseDirectory}\\{Constants.Log_dir}\\LogData.txt";
+
+                    lock (SyncObj)
+                    {
+                        using StreamWriter writer = new(path, true);
+                        writer.WriteLine(DateTime.Now + "\t" + valor);
+                        writer.Close();
+                    }
+                }
+            }
+            catch { }
+        }
     }
 }

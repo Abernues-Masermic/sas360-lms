@@ -3,13 +3,32 @@
 
     <Style x:Key="Textbox_selection" TargetType="TextBox">
         <Setter Property="Label.FontFamily" Value="Helvetica LT Std"/>
-        <Setter Property="Padding" Value="1, 3,1,1"/>
+        <Setter Property="Padding" Value="1,3,1,1"/>
         <Setter Property="FontSize"  Value="12"/>
         <Setter Property="Foreground" Value="#012b6a"/>
         <Setter Property="FontWeight" Value="Bold"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
     </Style>
+
+
+
+    <Style x:Key="Textbox_standard" TargetType="TextBox">
+        <Setter Property="FontFamily" Value="Helvetica LT Std"/>
+        <Setter Property="Padding" Value="3"/>
+        <Setter Property="FontSize"  Value="11"/>
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Right"/>
+        <Setter Property="FontWeight" Value="Normal"/>
+    </Style>
+
+    <Style x:Key="Textbox_standard_bold" TargetType="TextBox" BasedOn="{StaticResource Textbox_standard}">
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+
+
+
 
     <Style x:Key="Textbox_csv" TargetType="TextBox">
         <Setter Property="FontFamily" Value="Helvetica LT Std"/>
@@ -56,5 +75,8 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+    
+
 
 </ResourceDictionary>

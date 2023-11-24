@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <body>
-  <unit_id>4</unit_id>
-  <comm_port>COM6</comm_port>
-  <baud_rate>38400</baud_rate>
+  <unit_id>1</unit_id>
+  <comm_port>COM11</comm_port>
+  <baud_rate>115200</baud_rate>
   <conn_timeout>1000</conn_timeout>
-  <read_memory>1000</read_memory>
+  <read_memory>30</read_memory>
+  <read_log>30</read_log>
+  <wait_send_write>300</wait_send_write>
+  <comm_timeout>500</comm_timeout>
 </body>

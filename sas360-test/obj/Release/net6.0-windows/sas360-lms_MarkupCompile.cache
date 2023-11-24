@@ -1,0 +1,20 @@
+﻿sas360-lms
+
+
+winexe
+C#
+.cs
+C:\Program Files (x86)\Masermic\SAS360\SAS360_LMS_DEVELOP\sas360-lms\sas360-test\obj\Release\net6.0-windows\
+sas360_test
+none
+false
+TRACE;RELEASE;NET;NET6_0;NETCOREAPP
+C:\Program Files (x86)\Masermic\SAS360\SAS360_LMS_DEVELOP\sas360-lms\sas360-test\App.xaml
+27-129660452
+
+26679904772
+2011882530339
+CustomControl\DashedBorder.xaml;ResourceDictionary\Border.xaml;ResourceDictionary\Brushes.xaml;ResourceDictionary\Button.xaml;ResourceDictionary\Checkbox.xaml;ResourceDictionary\Combobox.xaml;ResourceDictionary\DashedBorder.xaml;ResourceDictionary\DatetimePicker.xaml;ResourceDictionary\DecimalUpDown.xaml;ResourceDictionary\Expander.xaml;ResourceDictionary\Gridview.xaml;ResourceDictionary\Label.xaml;ResourceDictionary\Listview.xaml;ResourceDictionary\ProgressBar.xaml;ResourceDictionary\RadioButton.xaml;ResourceDictionary\Tabcontrol.xaml;ResourceDictionary\Textblock.xaml;ResourceDictionary\Textbox.xaml;ResourceDictionary\ToggleButton.xaml;Window\AboutWindow.xaml;Window\DigitalChangeWindow.xaml;Window\EditDateTimeWindow.xaml;Window\EditInternalConfigWindow.xaml;Window\LoadSaveConfigConWindow.xaml;Window\MainWindow.xaml;Window\SettingAppWindow.xaml;Window\SettingModbusVarWindow.xaml;
+
+False
+

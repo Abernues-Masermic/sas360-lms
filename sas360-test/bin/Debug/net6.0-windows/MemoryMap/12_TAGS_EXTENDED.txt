@@ -1,0 +1,11 @@
+1200;u16tagID_2LSB;UInt16;-;1
+1201;u16tagID_bytes_3_4;UInt16;-;1
+1202;u16tagID_bytes_5_6;UInt16;-;1
+1203;u16tagID_bytes_7_8;UInt16;-;1
+1204;u16reserved;UInt16;-;1
+1205;s16PDOA_dec_ddeg;Int16;-;1
+1206;u16time_of_flight_us;UInt16;-;1
+1207;u8last_charge_battery_level_pct;Byte;-;1
+1207,5;u8reserva6_5;Byte;-;1
+1208;u16velocidad_tag_cm_s;UInt16;-;1
+1209;u16tiempo_desde_carga_h;UInt16;-;1

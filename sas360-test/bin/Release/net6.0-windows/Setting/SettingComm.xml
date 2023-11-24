@@ -1,2 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<RAIZ />
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<body>
+  <unit_id>4</unit_id>
+  <comm_port>COM3</comm_port>
+  <baud_rate>115200</baud_rate>
+  <conn_timeout>1000</conn_timeout>
+  <read_memory>10</read_memory>
+</body>

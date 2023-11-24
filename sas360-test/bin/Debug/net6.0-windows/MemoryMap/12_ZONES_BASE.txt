@@ -1,0 +1,20 @@
+1500;u16zoneID_2LSB;UInt16;-;1
+1501;u8zoneID_byte_3;Byte;-;1
+1501,5;u8zone_fw version;Byte;-;1
+1502;ub16zone_estado_codificado;UInt16;-;1
+1503;s16con_calc_zone_position_abs_X_cm;Int16;-;1
+1504;s16con_calc_zone_position_abs_Y_cm;Int16;-;1
+1505;ub16zone_received_command;UInt16;-;1
+1506;u16zone_radio_action_cm;UInt16;-;1
+1507;u16zone_reported_register;UInt16;-;1
+
+1508;u16con_calc_reserved;UInt16;-;1
+1509;u16con_calc_reserved;UInt16;-;1
+1510;u16con_calc_reserved;UInt16;-;1
+
+1511;u16con_dist_closest_cm;UInt16;-;1
+
+1512;aru16con_dist_form_antena_cm1;UInt16;-;1
+1513;aru16con_dist_form_antena_cm1;UInt16;-;1
+1514;aru16con_dist_form_antena_cm1;UInt16;-;1
+1515;aru16con_dist_form_antena_cm1;UInt16;-;1

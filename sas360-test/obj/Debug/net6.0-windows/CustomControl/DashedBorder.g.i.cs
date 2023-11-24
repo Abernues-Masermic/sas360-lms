@@ -53,7 +53,7 @@ namespace sas360_test.CustomControl {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/sas360-test;component/customcontrol/dashedborder.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/sas360-lms;component/customcontrol/dashedborder.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\CustomControl\DashedBorder.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
